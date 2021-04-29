@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Gamba\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Gamba\\.nuget\\packages"
+    ]
+  }
+}
