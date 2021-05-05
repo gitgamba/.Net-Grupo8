@@ -21,7 +21,7 @@ namespace LabSintaxis2
             else Console.WriteLine("no ingreso nada");
             Console.Clear();
 
-            //Menu de opciones con case 
+            //Menu de opciones con if 
 
 
             Console.WriteLine("Menu con IF");
@@ -42,7 +42,7 @@ namespace LabSintaxis2
 
             Console.ReadKey();
 
-
+            //Menu de opciones con case 
 
             Console.Clear();
             Console.WriteLine("Menu con Case");
@@ -68,7 +68,7 @@ namespace LabSintaxis2
             }
             Console.ReadKey();
             
- 
+          
         
         
         }}}

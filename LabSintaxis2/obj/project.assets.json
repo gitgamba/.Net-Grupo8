@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Gamba\\.nuget\\packages\\": {}
+    "C:\\Users\\renzo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\LabSintaxis2.csproj",
+      "projectUniqueName": "C:\\Users\\renzo\\Desktop\\Repositorios\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
       "projectName": "LabSintaxis2",
-      "projectPath": "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\LabSintaxis2.csproj",
-      "packagesPath": "C:\\Users\\Gamba\\.nuget\\packages\\",
-      "outputPath": "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\obj\\",
+      "projectPath": "C:\\Users\\renzo\\Desktop\\Repositorios\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
+      "packagesPath": "C:\\Users\\renzo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\renzo\\Desktop\\Repositorios\\.Net-Grupo8\\LabSintaxis2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gamba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\renzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
