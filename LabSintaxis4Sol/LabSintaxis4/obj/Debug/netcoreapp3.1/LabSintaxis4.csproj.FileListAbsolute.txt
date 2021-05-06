@@ -1,0 +1,13 @@
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\bin\Debug\netcoreapp3.1\LabSintaxis4.exe
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\bin\Debug\netcoreapp3.1\LabSintaxis4.deps.json
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\bin\Debug\netcoreapp3.1\LabSintaxis4.runtimeconfig.json
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\bin\Debug\netcoreapp3.1\LabSintaxis4.runtimeconfig.dev.json
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\bin\Debug\netcoreapp3.1\LabSintaxis4.dll
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\bin\Debug\netcoreapp3.1\LabSintaxis4.pdb
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\obj\Debug\netcoreapp3.1\LabSintaxis4.AssemblyInfoInputs.cache
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\obj\Debug\netcoreapp3.1\LabSintaxis4.AssemblyInfo.cs
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\obj\Debug\netcoreapp3.1\LabSintaxis4.csproj.CoreCompileInputs.cache
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\obj\Debug\netcoreapp3.1\LabSintaxis4.dll
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\obj\Debug\netcoreapp3.1\LabSintaxis4.pdb
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\obj\Debug\netcoreapp3.1\LabSintaxis4.genruntimeconfig.cache
+C:\Users\Gamba\source\repos\LabSintaxis4Sol\LabSintaxis4\obj\Debug\netcoreapp3.1\LabSintaxis4.csprojAssemblyReference.cache

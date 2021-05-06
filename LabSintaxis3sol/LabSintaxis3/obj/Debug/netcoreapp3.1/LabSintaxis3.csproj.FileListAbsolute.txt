@@ -1,0 +1,13 @@
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\bin\Debug\netcoreapp3.1\LabSintaxis3.exe
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\bin\Debug\netcoreapp3.1\LabSintaxis3.deps.json
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\bin\Debug\netcoreapp3.1\LabSintaxis3.runtimeconfig.json
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\bin\Debug\netcoreapp3.1\LabSintaxis3.runtimeconfig.dev.json
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\bin\Debug\netcoreapp3.1\LabSintaxis3.dll
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\bin\Debug\netcoreapp3.1\LabSintaxis3.pdb
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\obj\Debug\netcoreapp3.1\LabSintaxis3.csprojAssemblyReference.cache
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\obj\Debug\netcoreapp3.1\LabSintaxis3.AssemblyInfoInputs.cache
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\obj\Debug\netcoreapp3.1\LabSintaxis3.AssemblyInfo.cs
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\obj\Debug\netcoreapp3.1\LabSintaxis3.csproj.CoreCompileInputs.cache
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\obj\Debug\netcoreapp3.1\LabSintaxis3.dll
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\obj\Debug\netcoreapp3.1\LabSintaxis3.pdb
+C:\Users\Gamba\source\repos\LabSintaxis3sol\LabSintaxis3\obj\Debug\netcoreapp3.1\LabSintaxis3.genruntimeconfig.cache

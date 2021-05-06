@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\LabSintaxis2.csproj": {}
+    "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj": {}
   },
   "projects": {
-    "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\LabSintaxis2.csproj": {
+    "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\LabSintaxis2.csproj",
+        "projectUniqueName": "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
         "projectName": "LabSintaxis2",
-        "projectPath": "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\LabSintaxis2.csproj",
+        "projectPath": "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
         "packagesPath": "C:\\Users\\Gamba\\.nuget\\packages\\",
-        "outputPath": "C:\\Net\\Unidad01\\Capitulo02\\LabSintaxis2.Sol\\LabSintaxis2\\obj\\",
+        "outputPath": "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gamba\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
