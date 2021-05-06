@@ -34,7 +34,7 @@ namespace LabSintaxis4
                         }
                     else Console.WriteLine("El año no es bisiesto");
            */
-            //Ejercicio 4.3
+            //Ejercicio 4.3 Fibonacci 
             int i, n1, n2, n3;
             
             
