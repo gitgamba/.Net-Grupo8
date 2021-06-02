@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj": {}
+    "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj": {
+    "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
+        "projectUniqueName": "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
         "projectName": "LabSintaxis2",
-        "projectPath": "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
+        "projectPath": "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
         "packagesPath": "C:\\Users\\Gamba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\obj\\",
+        "outputPath": "C:\\Users\\Gamba\\source\\repos\\.Net-Grupo8\\LabSintaxis2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gamba\\AppData\\Roaming\\NuGet\\NuGet.Config",
