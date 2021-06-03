@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\renzo\\.nuget\\packages\\": {}
+    "C:\\Users\\Gamba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renzo\\Desktop\\Repositorios\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
+      "projectUniqueName": "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
       "projectName": "LabSintaxis2",
-      "projectPath": "C:\\Users\\renzo\\Desktop\\Repositorios\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
-      "packagesPath": "C:\\Users\\renzo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renzo\\Desktop\\Repositorios\\.Net-Grupo8\\LabSintaxis2\\obj\\",
+      "projectPath": "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\LabSintaxis2.csproj",
+      "packagesPath": "C:\\Users\\Gamba\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gamba\\Source\\Repos\\.Net-Grupo8\\LabSintaxis2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\renzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gamba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
