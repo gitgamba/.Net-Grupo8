@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LabSintaxis2
+namespace labSintraxis2
 {
     class Program
     {
@@ -67,9 +67,6 @@ namespace LabSintaxis2
 
             }
             Console.ReadKey();
-            
-          
-        
-        
-        }}}
-
+        }
+    }
+}
