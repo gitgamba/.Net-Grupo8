@@ -82,10 +82,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Business.Entities\Business.Entities.csproj">
-      <Project>{79a85f39-c231-4a15-9414-dbc765a7033b}</Project>
-      <Name>Business.Entities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Util\Util.csproj">
       <Project>{6fab6617-01ec-4f45-b72a-be178c43e617}</Project>
       <Name>Util</Name>

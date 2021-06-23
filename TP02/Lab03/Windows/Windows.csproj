@@ -77,8 +77,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Business.Entities\Business.Entities.csproj">
-      <Project>{79a85f39-c231-4a15-9414-dbc765a7033b}</Project>
+    <ProjectReference Include="..\Business.Entities2\Business.Entities.csproj">
+      <Project>{2ebc6568-6683-44da-adf7-1a65f58f2b02}</Project>
       <Name>Business.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\Util\Util.csproj">
