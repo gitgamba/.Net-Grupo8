@@ -71,6 +71,13 @@
       <Project>{2ebc6568-6683-44da-adf7-1a65f58f2b02}</Project>
       <Name>Business.Entities</Name>
     </ProjectReference>
+<<<<<<< HEAD
+=======
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{6fab6617-01ec-4f45-b72a-be178c43e617}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+>>>>>>> 1aaf00eac6258928ec3b542fc14213e746080342
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
