@@ -34,6 +34,8 @@ namespace Windows // esto desde un principio tendriamos que haberlo llamado UI.D
         {
             this.Notificar(this.Text, mensaje, botones, icono);
         }
+
+        
     }
 
    
