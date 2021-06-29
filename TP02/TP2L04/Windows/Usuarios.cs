@@ -17,6 +17,7 @@ namespace Windows
         public Usuarios()
         {
             InitializeComponent();
+
         }
 
         public void Listar()
@@ -27,7 +28,8 @@ namespace Windows
 
         private void Usuarios_Load(object sender, EventArgs e)
         {
-             this.Listar();
+            dgvUsuarios.AutoGenerateColumns = false;
+            this.Listar();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
