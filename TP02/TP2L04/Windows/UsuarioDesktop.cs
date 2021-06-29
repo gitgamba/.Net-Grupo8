@@ -16,6 +16,7 @@ namespace Windows
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         public Usuario UsuarioActual { get; set; }
 
@@ -115,5 +116,7 @@ namespace Windows
         {
 
         }
+=======
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
     }
 }

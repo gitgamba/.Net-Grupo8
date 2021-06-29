@@ -33,13 +33,22 @@ namespace Windows
             this.lblID = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.lblClave = new System.Windows.Forms.Label();
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.chkHabilitado = new System.Windows.Forms.CheckBox();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblConfirmarClave = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.lblClave = new System.Windows.Forms.Label();
+=======
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -52,7 +61,10 @@ namespace Windows
             // 
             // tableLayoutPanel1
             // 
+<<<<<<< HEAD
             this.tableLayoutPanel1.AutoSize = true;
+=======
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -84,6 +96,7 @@ namespace Windows
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+<<<<<<< HEAD
             this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 187);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
@@ -93,6 +106,15 @@ namespace Windows
             this.lblID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblID.AutoSize = true;
             this.lblID.Location = new System.Drawing.Point(3, 12);
+=======
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(534, 190);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(3, 0);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(18, 13);
             this.lblID.TabIndex = 0;
@@ -100,9 +122,14 @@ namespace Windows
             // 
             // lblNombre
             // 
+<<<<<<< HEAD
             this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblNombre.AutoSize = true;
             this.lblNombre.Location = new System.Drawing.Point(3, 49);
+=======
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(3, 38);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 1;
@@ -110,19 +137,40 @@ namespace Windows
             // 
             // lblEmail
             // 
+<<<<<<< HEAD
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(3, 86);
+=======
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(3, 76);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(32, 13);
             this.lblEmail.TabIndex = 2;
             this.lblEmail.Text = "Email";
             // 
+<<<<<<< HEAD
             // chkHabilitado
             // 
             this.chkHabilitado.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chkHabilitado.AutoSize = true;
             this.chkHabilitado.Location = new System.Drawing.Point(215, 10);
+=======
+            // lblClave
+            // 
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(3, 114);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(34, 13);
+            this.lblClave.TabIndex = 3;
+            this.lblClave.Text = "Clave";
+            // 
+            // chkHabilitado
+            // 
+            this.chkHabilitado.AutoSize = true;
+            this.chkHabilitado.Location = new System.Drawing.Point(269, 3);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.chkHabilitado.Name = "chkHabilitado";
             this.chkHabilitado.Size = new System.Drawing.Size(73, 17);
             this.chkHabilitado.TabIndex = 4;
@@ -131,9 +179,14 @@ namespace Windows
             // 
             // lblApellido
             // 
+<<<<<<< HEAD
             this.lblApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblApellido.AutoSize = true;
             this.lblApellido.Location = new System.Drawing.Point(215, 49);
+=======
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(269, 38);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(44, 13);
             this.lblApellido.TabIndex = 5;
@@ -141,9 +194,14 @@ namespace Windows
             // 
             // lblUsuario
             // 
+<<<<<<< HEAD
             this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Location = new System.Drawing.Point(215, 86);
+=======
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(269, 76);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 6;
@@ -151,14 +209,20 @@ namespace Windows
             // 
             // lblConfirmarClave
             // 
+<<<<<<< HEAD
             this.lblConfirmarClave.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblConfirmarClave.AutoSize = true;
             this.lblConfirmarClave.Location = new System.Drawing.Point(215, 123);
+=======
+            this.lblConfirmarClave.AutoSize = true;
+            this.lblConfirmarClave.Location = new System.Drawing.Point(269, 114);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.lblConfirmarClave.Name = "lblConfirmarClave";
             this.lblConfirmarClave.Size = new System.Drawing.Size(80, 13);
             this.lblConfirmarClave.TabIndex = 7;
             this.lblConfirmarClave.Text = "Confirmar clave";
             // 
+<<<<<<< HEAD
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(321, 151);
@@ -172,11 +236,17 @@ namespace Windows
             // btnAceptar
             // 
             this.btnAceptar.Location = new System.Drawing.Point(215, 151);
+=======
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(269, 155);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // lblClave
@@ -205,42 +275,84 @@ namespace Windows
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.Location = new System.Drawing.Point(109, 45);
+=======
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(402, 155);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(136, 3);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 10;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(136, 41);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 11;
             // 
             // txtEmail
             // 
+<<<<<<< HEAD
             this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.Location = new System.Drawing.Point(109, 82);
+=======
+            this.txtEmail.Location = new System.Drawing.Point(136, 79);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 12;
             // 
             // txtClave
             // 
+<<<<<<< HEAD
             this.txtClave.Location = new System.Drawing.Point(109, 114);
+=======
+            this.txtClave.Location = new System.Drawing.Point(136, 117);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(100, 20);
             this.txtClave.TabIndex = 13;
             // 
             // txtApellido
             // 
+<<<<<<< HEAD
             this.txtApellido.Location = new System.Drawing.Point(321, 40);
+=======
+            this.txtApellido.Location = new System.Drawing.Point(402, 41);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
             this.txtApellido.TabIndex = 14;
             // 
             // txtUsuario
             // 
+<<<<<<< HEAD
             this.txtUsuario.Location = new System.Drawing.Point(321, 77);
+=======
+            this.txtUsuario.Location = new System.Drawing.Point(402, 79);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 15;
             // 
             // txtConfirmarClave
             // 
+<<<<<<< HEAD
             this.txtConfirmarClave.Location = new System.Drawing.Point(321, 114);
+=======
+            this.txtConfirmarClave.Location = new System.Drawing.Point(402, 117);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.txtConfirmarClave.Name = "txtConfirmarClave";
             this.txtConfirmarClave.Size = new System.Drawing.Size(100, 20);
             this.txtConfirmarClave.TabIndex = 16;
@@ -248,6 +360,7 @@ namespace Windows
             // UsuarioDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(425, 187);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UsuarioDesktop";
@@ -257,6 +370,15 @@ namespace Windows
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+=======
+            this.ClientSize = new System.Drawing.Size(534, 190);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Name = "UsuarioDesktop";
+            this.Text = "Usuario";
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.ResumeLayout(false);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
 
         }
 

@@ -36,15 +36,24 @@ namespace Windows
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.tscUsuarios = new System.Windows.Forms.ToolStrip();
+<<<<<<< HEAD
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
+=======
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.habilitado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+<<<<<<< HEAD
+=======
+            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
+            this.tsbEditar = new System.Windows.Forms.ToolStripButton();
+            this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.tcUsuarios.ContentPanel.SuspendLayout();
             this.tcUsuarios.TopToolStripPanel.SuspendLayout();
             this.tcUsuarios.SuspendLayout();
@@ -105,7 +114,11 @@ namespace Windows
             this.dgvUsuarios.Location = new System.Drawing.Point(3, 3);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
+<<<<<<< HEAD
             this.dgvUsuarios.Size = new System.Drawing.Size(677, 348);
+=======
+            this.dgvUsuarios.Size = new System.Drawing.Size(966, 467);
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.dgvUsuarios.TabIndex = 0;
             // 
             // btnSalir
@@ -138,6 +151,7 @@ namespace Windows
             this.tsbEliminar});
             this.tscUsuarios.Location = new System.Drawing.Point(3, 0);
             this.tscUsuarios.Name = "tscUsuarios";
+<<<<<<< HEAD
             this.tscUsuarios.Size = new System.Drawing.Size(81, 25);
             this.tscUsuarios.TabIndex = 0;
             // 
@@ -175,46 +189,107 @@ namespace Windows
             // id
             // 
             this.id.DataPropertyName = "ID";
+=======
+            this.tscUsuarios.Size = new System.Drawing.Size(112, 25);
+            this.tscUsuarios.TabIndex = 0;
+            // 
+            // id
+            // 
+            this.id.Frozen = true;
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.id.HeaderText = "ID";
             this.id.Name = "id";
             this.id.ReadOnly = true;
             // 
             // nombre
             // 
+<<<<<<< HEAD
             this.nombre.DataPropertyName = "Nombre";
+=======
+            this.nombre.Frozen = true;
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.nombre.HeaderText = "Nombre";
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             // 
             // apellido
             // 
+<<<<<<< HEAD
             this.apellido.DataPropertyName = "Apellido";
+=======
+            this.apellido.Frozen = true;
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.apellido.HeaderText = "Apellido";
             this.apellido.Name = "apellido";
             this.apellido.ReadOnly = true;
             // 
             // usuario
             // 
+<<<<<<< HEAD
             this.usuario.DataPropertyName = "Usuario";
+=======
+            this.usuario.Frozen = true;
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.usuario.HeaderText = "Usuario";
             this.usuario.Name = "usuario";
             this.usuario.ReadOnly = true;
             // 
             // email
             // 
+<<<<<<< HEAD
             this.email.DataPropertyName = "Email";
+=======
+            this.email.Frozen = true;
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.email.HeaderText = "EMail";
             this.email.Name = "email";
             this.email.ReadOnly = true;
             // 
             // habilitado
             // 
+<<<<<<< HEAD
             this.habilitado.DataPropertyName = "Habilitado";
+=======
+            this.habilitado.Frozen = true;
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             this.habilitado.HeaderText = "Habilitado";
             this.habilitado.Name = "habilitado";
             this.habilitado.ReadOnly = true;
             this.habilitado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.habilitado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+<<<<<<< HEAD
+=======
+            // 
+            // tsbNuevo
+            // 
+            this.tsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbNuevo.Image = ((System.Drawing.Image)(resources.GetObject("tsbNuevo.Image")));
+            this.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbNuevo.Name = "tsbNuevo";
+            this.tsbNuevo.Size = new System.Drawing.Size(23, 22);
+            this.tsbNuevo.Text = "toolStripButton1";
+            this.tsbNuevo.ToolTipText = "Nuevo\r\n";
+            // 
+            // tsbEditar
+            // 
+            this.tsbEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbEditar.Image = ((System.Drawing.Image)(resources.GetObject("tsbEditar.Image")));
+            this.tsbEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbEditar.Name = "tsbEditar";
+            this.tsbEditar.Size = new System.Drawing.Size(23, 22);
+            this.tsbEditar.Text = "toolStripButton1";
+            this.tsbEditar.ToolTipText = "Editar\r\n";
+            // 
+            // tsbEliminar
+            // 
+            this.tsbEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbEliminar.Image = ((System.Drawing.Image)(resources.GetObject("tsbEliminar.Image")));
+            this.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbEliminar.Name = "tsbEliminar";
+            this.tsbEliminar.Size = new System.Drawing.Size(23, 22);
+            this.tsbEliminar.Text = "toolStripButton2";
+            this.tsbEliminar.ToolTipText = "Eliminar";
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
             // 
             // Usuarios
             // 
@@ -250,15 +325,24 @@ namespace Windows
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.ToolStrip tscUsuarios;
         private System.Windows.Forms.DataGridView dgvUsuarios;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripButton tsbNuevo;
         private System.Windows.Forms.ToolStripButton tsbEditar;
         private System.Windows.Forms.ToolStripButton tsbEliminar;
+=======
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewCheckBoxColumn habilitado;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.ToolStripButton tsbNuevo;
+        private System.Windows.Forms.ToolStripButton tsbEditar;
+        private System.Windows.Forms.ToolStripButton tsbEliminar;
+>>>>>>> 26fd5d4fcec38d045d1c42f35da9812ce93e679f
     }
 }
 
