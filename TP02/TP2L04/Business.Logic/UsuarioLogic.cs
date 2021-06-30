@@ -18,24 +18,52 @@ namespace Business.Logic
 
         public UsuarioAdapter UsuarioData { get => _UsuarioData; set => _UsuarioData = value; }
 
-       public Usuario getOne(int ID)
+        public Usuario getOne(int ID)
         {
-            return UsuarioData.GetOne(ID);
-        }
+
+            try
+            {
+                return UsuarioData.GetOne(ID);
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+
+        }   
+          
 
         public List<Usuario> getAll()
         {
-            return UsuarioData.GetAll();
+            
+            {
+                return UsuarioData.GetAll();
+            }
+            
         }
 
         public void Delete(int ID)
         {
-            UsuarioData.Delete(ID);
+            try
+            {
+                UsuarioData.Delete(ID);
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
         }
 
         public void Save(Usuario user)
         {
-            UsuarioData.Save(user);
-        }
+            try
+            {
+                UsuarioData.Save(user);
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+        } 
     }
 }
