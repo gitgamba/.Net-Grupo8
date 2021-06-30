@@ -36,8 +36,11 @@ namespace Business.Logic
         public List<Usuario> getAll()
         {
             
-            {
+           try {
                 return UsuarioData.GetAll();
+            }catch (Exception Ex)
+            {
+                throw Ex;
             }
             
         }
