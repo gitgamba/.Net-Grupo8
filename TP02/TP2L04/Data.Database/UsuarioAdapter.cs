@@ -5,10 +5,9 @@ using Business.Entities;
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Data.Database
 {
-    public class UsuarioAdapter:Adapter
+    public class UsuarioAdapter : SqlException
     {
         #region DatosEnMemoria
         // Esta región solo se usa en esta etapa donde los datos se mantienen en memoria.
@@ -54,7 +53,7 @@ namespace Data.Database
                     usr.Clave = "abrete sesamo";
                     usr.Email = "alanbrado@gmail.com";
                     usr.Habilitado = true;
-                    _Usuarios.Add(usr); 
+                    _Usuarios.Add(usr);
 
                 }
                 return _Usuarios;
@@ -64,12 +63,84 @@ namespace Data.Database
 
         public List<Usuario> GetAll()
         {
-            return new List<Usuario>(Usuarios);
+
+            //return new List<Usuario>(Usuarios);
+            ///
+            // Instanciamos el objeto lista a retornar
+            List<Usuario> Usuarios = new List<Usuario>();
+            try
+            {
+                // abrimos la conexión a la base de datos con el método que creamos antes 
+                this.OpenConnection();
+
+                /* 
+                 * creamos un objeto SqlCommand que será la sentencia SQL 
+                 * que vamos a ejecutar contra la base de datos 
+                 * (los datos de la BD usaurio,contraseñam servidor,etc.
+                 * están en el connection string)
+                 */
+
+                SqlCommand cmdUsuarios = new SqlCommand("select * from usuarios", sqlConn);
+                // 
+                //instanciamos un objeto DataReader que será
+                //   el que recuperará los datos de la BD
+                //
+
+                SqlDataReader drUsuarios = cmdUsuarios.ExecuteReader();
+
+                // Read() lee una fila de las devueltas por el comando sql
+                // carga los datos en drUsuarios para poder accederlos,"
+                // devuelve verdadero mientras haya podido leer datos
+                // y avanza a la fila siguiente para el próximo read
+                //
+                while (drUsuarios.Read())
+                {
+                    /// 
+                    //  creamos un objeto Usuario de la capa de entidades para copiar
+                    //  los datos de la fila del DataRead er al objeto de entidades
+                    //
+                    Usuario usr = new Usuario();
+
+                    //ahora copiamos los datos de la fila al objeto
+
+                    usr.ID = (int)drUsuarios["id_usuario"];
+                    usr.NombreUsuario = (string)drUsuarios["nombre_usuario"];
+                    usr.Clave = (string)drUsuarios["clave"];
+                    usr.Habilitado = (bool)drUsuarios["habilitado"];
+                    usr.Nombre = (string)drUsuarios["nombre"];
+                    usr.Apellido = (string)drUsuarios["apellido"];
+                    usr.Email = (string)drUsuarios["email"];
+
+
+
+
+                    //agregarnos el objeto con datos a la lista que devolveremos
+                    Usuarios.Add(usr);
+                }
+                //cerramos la el DataReader y la conexión a la BD
+
+                drUsuarios.Close();
+            }catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+               new Exception("Error al recuperar lista de usuarios", Ex);
+                throw ExcepcionManejada;
+            }
+                finally
+            {
+                this.CloseConnection();
+            }
+            //devolvemos el objeto
+            return Usuarios;
+
+
+
+
         }
 
         public Business.Entities.Usuario GetOne(int ID)
         {
-            return Usuarios.Find(delegate(Usuario u) { return u.ID == ID; });
+            return Usuarios.Find(delegate (Usuario u) { return u.ID == ID; });
         }
 
         public void Delete(int ID)
@@ -98,9 +169,9 @@ namespace Data.Database
             }
             else if (usuario.State == BusinessEntity.States.Modified)
             {
-                Usuarios[Usuarios.FindIndex(delegate(Usuario u) { return u.ID == usuario.ID; })]=usuario;
+                Usuarios[Usuarios.FindIndex(delegate (Usuario u) { return u.ID == usuario.ID; })] = usuario;
             }
-            usuario.State = BusinessEntity.States.Unmodified;            
+            usuario.State = BusinessEntity.States.Unmodified;
         }
     }
 }

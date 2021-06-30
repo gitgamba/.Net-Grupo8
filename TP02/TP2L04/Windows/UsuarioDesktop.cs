@@ -28,8 +28,14 @@ namespace Windows
         {
             this.modo = modo;
             UsuarioLogic usrLogic = new UsuarioLogic();
-            UsuarioActual = usrLogic.getOne(ID);
+            try
+            { 
+                UsuarioActual = usrLogic.getOne(ID);
             MapearDeDatos();
+              }catch (Exception Ex)
+            {
+                throw Ex;
+            }
         }
 
         public override void MapearDeDatos()
@@ -72,6 +78,7 @@ namespace Windows
 
         public override bool Validar()
         {
+            
             if (txtNombre.Text.Equals(String.Empty) ||
                 txtApellido.Text.Equals(String.Empty) ||
                 txtEmail.Text.Equals(String.Empty) ||
@@ -96,7 +103,13 @@ namespace Windows
         {
             MapearADatos();
             UsuarioLogic usrLogic = new UsuarioLogic();
-            usrLogic.Save(UsuarioActual);
+            try
+            {
+               usrLogic.Save(UsuarioActual);
+            } catch (Exception Ex)
+            {
+                throw Ex;
+            }
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

@@ -23,7 +23,13 @@ namespace Windows
         public void Listar()
         {
             UsuarioLogic ul = new UsuarioLogic();
-            this.dgvUsuarios.DataSource = ul.getAll();
+            try
+            {
+                this.dgvUsuarios.DataSource = ul.getAll();
+            }catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Usuarios_Load(object sender, EventArgs e)
@@ -44,9 +50,20 @@ namespace Windows
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            UsuarioDesktop formUsuario = new UsuarioDesktop(ApplicationForm.ModoForm.Alta);
-            formUsuario.ShowDialog();
-            this.Listar();
+           
+            try
+            {
+                UsuarioDesktop formUsuario = new UsuarioDesktop(ApplicationForm.ModoForm.Alta);
+                formUsuario.ShowDialog();
+                
+            }catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                this.Listar();
+            }
         }
 
         private void tsbEditar_Click(object sender, EventArgs e)
@@ -68,20 +85,28 @@ namespace Windows
 
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
-                if (this.dgvUsuarios.SelectedRows.Count == 0)
-                {
+            if (this.dgvUsuarios.SelectedRows.Count == 0)
+            {
                 MessageBox.Show("Porfavor seleccione una fila.", "Acción invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               return;
-                    }
+                return;
+            }
 
-                // para obtener el ID utilizamos los que estaba en el pdf
+            // para obtener el ID utilizamos los que estaba en el pdf
             int ID = ((Business.Entities.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).ID;
             //Ahora utilizamos el ctor de UsuarioDesktop que requiere enviar el ID y Modo
 
-            UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Baja);
-            formUsuario.ShowDialog();
+            try
+            {
+                UsuarioDesktop formUsuario = new UsuarioDesktop(ID, ApplicationForm.ModoForm.Baja);
+                formUsuario.ShowDialog();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally { 
             this.Listar();
-
+        }
 
         }
 
