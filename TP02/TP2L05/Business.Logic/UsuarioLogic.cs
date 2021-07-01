@@ -60,5 +60,13 @@ namespace Business.Logic
             }
             catch (Exception Ex) { throw Ex; }
          }
+        public Usuario GetOneUsuario(string nombreUsuario)
+        {
+            try
+            {
+                return UsuarioData.GetOneUsuario(nombreUsuario);
+            }
+            catch (Exception Ex) { throw Ex; }
+        }
     }
 }

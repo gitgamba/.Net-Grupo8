@@ -49,7 +49,7 @@ namespace Windows.Main
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.57798F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tableLayoutPanel1.Controls.Add(this.lbBienvenidos, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbUsuario, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 2, 3);
@@ -69,12 +69,13 @@ namespace Windows.Main
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(370, 215);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // lbBienvenidos
             // 
             this.lbBienvenidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbBienvenidos.AutoSize = true;
-            this.lbBienvenidos.Location = new System.Drawing.Point(121, 10);
+            this.lbBienvenidos.Location = new System.Drawing.Point(119, 10);
             this.lbBienvenidos.Name = "lbBienvenidos";
             this.lbBienvenidos.Size = new System.Drawing.Size(175, 13);
             this.lbBienvenidos.TabIndex = 0;
@@ -87,7 +88,7 @@ namespace Windows.Main
             this.lbUsuario.AutoSize = true;
             this.lbUsuario.Location = new System.Drawing.Point(10, 57);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(105, 13);
+            this.lbUsuario.Size = new System.Drawing.Size(103, 13);
             this.lbUsuario.TabIndex = 1;
             this.lbUsuario.Text = "Usuario:";
             this.lbUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,7 +98,7 @@ namespace Windows.Main
             // 
             this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(121, 161);
+            this.linkLabel1.Location = new System.Drawing.Point(119, 161);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(175, 13);
             this.linkLabel1.TabIndex = 2;
@@ -107,18 +108,21 @@ namespace Windows.Main
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(121, 54);
+            this.textBox1.Location = new System.Drawing.Point(119, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(121, 113);
+            this.textBox2.Location = new System.Drawing.Point(119, 113);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(175, 20);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lbContraseña
             // 
@@ -126,7 +130,7 @@ namespace Windows.Main
             this.lbContraseña.AutoSize = true;
             this.lbContraseña.Location = new System.Drawing.Point(10, 117);
             this.lbContraseña.Name = "lbContraseña";
-            this.lbContraseña.Size = new System.Drawing.Size(105, 13);
+            this.lbContraseña.Size = new System.Drawing.Size(103, 13);
             this.lbContraseña.TabIndex = 5;
             this.lbContraseña.Text = "Contraseña:";
             this.lbContraseña.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -134,7 +138,7 @@ namespace Windows.Main
             // btn_login
             // 
             this.btn_login.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_login.Location = new System.Drawing.Point(237, 187);
+            this.btn_login.Location = new System.Drawing.Point(235, 187);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(59, 23);
             this.btn_login.TabIndex = 6;
@@ -145,12 +149,13 @@ namespace Windows.Main
             // btn_Salir
             // 
             this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Salir.Location = new System.Drawing.Point(302, 187);
+            this.btn_Salir.Location = new System.Drawing.Point(300, 187);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(55, 23);
             this.btn_Salir.TabIndex = 7;
             this.btn_Salir.Text = "Salir";
             this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // Login
             // 

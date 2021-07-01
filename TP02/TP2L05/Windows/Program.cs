@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
+
 namespace Academia
 {
     static class Program
@@ -14,8 +15,9 @@ namespace Academia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Login());
-            //Application.Run(new FormMain());
+            // Application.Run(new Windows.Main.Login());
+            Application.Run(new Windows.Main.FormMain());
+            //Application.Run(new Usuarios());
         }
     }
 }
