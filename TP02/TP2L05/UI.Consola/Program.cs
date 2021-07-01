@@ -103,7 +103,7 @@ namespace UI.Consola
                 Console.Clear();
                 Console.Write("Ingrese el ID del usuario a consultar: ");
                 int id = int.Parse(Console.ReadLine());
-                this.MostrarDatos(UsuarioNegocio.getOne(id));
+                this.MostrarDatos(UsuarioNegocio.GetOneId(id));
             }
             catch (FormatException)
             {
@@ -157,7 +157,7 @@ namespace UI.Consola
                 Console.Clear();
                 Console.Write("Ingrese el ID del Usuario a modificar: ");
                 int id = int.Parse(Console.ReadLine());
-                Usuario usuario = UsuarioNegocio.getOne(id);
+                Usuario usuario = UsuarioNegocio.GetOneId(id);
 
                 Console.Write("\nIngrese Nombre: ");
                 usuario.Nombre = Console.ReadLine();
