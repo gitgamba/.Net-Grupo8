@@ -61,7 +61,7 @@ namespace Windows.Main
             catch (Exception Ex)
 
             {
-                NotificarError("error", "Usuario o Contraseña incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                NotificarError("error", Ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

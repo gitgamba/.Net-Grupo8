@@ -23,7 +23,7 @@ namespace UI.Consola
         {
             this.UsuarioNegocio = new UsuarioLogic();
         }
-        private UsuarioLogic _UsuarioNegocio;
+        //private UsuarioLogic _UsuarioNegocio;
         public UsuarioLogic UsuarioNegocio
         { get; set; }
         public void Menu()

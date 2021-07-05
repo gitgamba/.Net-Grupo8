@@ -8,39 +8,39 @@ using System.Data.SqlClient;
 
 namespace Data.Database
 {
-    public class ComisionesAdapter : Adapter
+    public class ComisionAdapter : Adapter
     {
-        public ComisionesAdapter()
+        public ComisionAdapter()
         {
 
         }
-        public List<Comisiones> GetAll()
+        public List<Comision> GetAll()
         {
-            List<Comisiones> comisiones = new List<Comisiones>();
+            List<Comision> Comision = new List<Comision>();
             try
             {
                 OpenConnection();
 
-                SqlCommand cmdComisiones = new SqlCommand("SELECT * FROM comisiones", sqlConn);
+                SqlCommand cmdComision = new SqlCommand("SELECT * FROM Comisiones", sqlConn);
 
-                SqlDataReader drComisiones = cmdComisiones.ExecuteReader();
+                SqlDataReader drComision = cmdComision.ExecuteReader();
 
-                while (drComisiones.Read())
+                while (drComision.Read())
                 {
-                    Comisiones com = new Comisiones();
+                    Comision com = new Comision();
 
-                    com.ID = (int)drComisiones["id_comision"];
-                    com.DescComision = (string)drComisiones["desc_comision"];
-                    com.AnioEspecialidad = (int)drComisiones["anio_especialidad"];
-                    com.IdPlan = (int)drComisiones["id_plan"];
-                    comisiones.Add(com);
+                    com.ID = (int)drComision["id_comision"];
+                    com.DescComision = (string)drComision["desc_comision"];
+                    com.AnioEspecialidad = (int)drComision["anio_especialidad"];
+                    com.IdPlan = (int)drComision["id_plan"];
+                    Comision.Add(com);
                 }
 
-                drComisiones.Close();
+                drComision.Close();
             }
             catch (Exception Ex)
             {
-                Exception ExcepcionManejada = new Exception("Error al recuperar lista de comisiones GetAll()", Ex);
+                Exception ExcepcionManejada = new Exception("Error al recuperar lista de Comisiones GetAll()", Ex);
                 throw ExcepcionManejada;
             }
             finally
@@ -48,27 +48,27 @@ namespace Data.Database
                 CloseConnection();
             }
 
-            return comisiones;
+            return Comision;
 
         }
-        public Comisiones GetOne(int ID)
+        public Comision GetOne(int ID)
         {
-            Comisiones com = new Comisiones();
+            Comision com = new Comision();
             try
             {
                 OpenConnection();
-                SqlCommand cmdComisiones = new SqlCommand("SELECT * FROM comisiones WHERE id_comision = @ID", sqlConn);
-                cmdComisiones.Parameters.Add("@ID", SqlDbType.Int).Value = ID;
-                SqlDataReader drComisiones = cmdComisiones.ExecuteReader();
-                while (drComisiones.Read())
+                SqlCommand cmdComision = new SqlCommand("SELECT * FROM Comisiones WHERE id_comision = @ID", sqlConn);
+                cmdComision.Parameters.Add("@ID", SqlDbType.Int).Value = ID;
+                SqlDataReader drComision = cmdComision.ExecuteReader();
+                while (drComision.Read())
                 {
-                    com.ID = (int)drComisiones["id_comision"];
-                    com.AnioEspecialidad = (int)drComisiones["anio_especialidad"];
-                    com.DescComision = (string)drComisiones["desc_comision"];
-                    com.IdPlan = (int)drComisiones["id_plan"];
+                    com.ID = (int)drComision["id_comision"];
+                    com.AnioEspecialidad = (int)drComision["anio_especialidad"];
+                    com.DescComision = (string)drComision["desc_comision"];
+                    com.IdPlan = (int)drComision["id_plan"];
 
                 }
-                drComisiones.Close();
+                drComision.Close();
             }
             catch (Exception Ex)
             {
@@ -94,7 +94,7 @@ namespace Data.Database
             try
             {
                 OpenConnection();
-                SqlCommand cmdDelete = new SqlCommand("delete comisiones where id_comision = @id", sqlConn);
+                SqlCommand cmdDelete = new SqlCommand("delete Comisiones where id_comision = @id", sqlConn);
                 cmdDelete.Parameters.Add("@id", SqlDbType.Int).Value = ID;
                 cmdDelete.ExecuteNonQuery();
             }
@@ -108,7 +108,7 @@ namespace Data.Database
                 CloseConnection();
             }
         }
-        public void Save(Comisiones comision)
+        public void Save(Comision comision)
         {
             if (comision.State == BusinessEntity.States.Deleted)
             {
@@ -125,12 +125,12 @@ namespace Data.Database
             }
             comision.State = BusinessEntity.States.Unmodified;
         }
-        protected void Update(Comisiones comision)
+        protected void Update(Comision comision)
         {
             try
             {
                 OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("UPDATE comisiones SET desc_comision = @descCom, " +
+                SqlCommand cmdSave = new SqlCommand("UPDATE Comision SET desc_comision = @descCom, " +
                     "anio_especialidad= @AnioEsp, id_plan = @IdPlan " +
                     "WHERE id_comision = @id ", sqlConn);
 
@@ -152,12 +152,12 @@ namespace Data.Database
             }
 
         }
-        protected void Insert(Comisiones comision)
+        protected void Insert(Comision comision)
         {
             try
             {
                 OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("INSERT INTO comisiones (desc_comision,anio_especialidad,id_plan) " +
+                SqlCommand cmdSave = new SqlCommand("INSERT INTO Comision (desc_comision,anio_especialidad,id_plan) " +
                     "values(@desCom,@AnioEsp,@IdPlan) " +
                     "select @@identity ", sqlConn);
 

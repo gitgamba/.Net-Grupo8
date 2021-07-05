@@ -12,17 +12,17 @@ namespace Business.Logic
     {
        public ComisionesLogic()
         {
-            this.ComisionesData = new ComisionesAdapter();
+            this.ComisionData = new ComisionAdapter();
         }
 
-        private ComisionesAdapter _ComisionesData;
-public ComisionesAdapter ComisionesData { get => _ComisionesData; set => _ComisionesData = value; }
+        private ComisionAdapter _ComisionData;
+public ComisionAdapter ComisionData { get => _ComisionData; set => _ComisionData = value; }
 
-        public Comisiones GetOneId(int ID)
+        public Comision GetOneId(int ID)
         {
             try
             {
-                return ComisionesData.GetOne(ID);
+                return ComisionData.GetOne(ID);
             }
             catch (Exception Ex)
             {
@@ -30,11 +30,11 @@ public ComisionesAdapter ComisionesData { get => _ComisionesData; set => _Comisi
             }
         }
 
-        public List<Comisiones> getAll()
+        public List<Comision> getAll()
         {
             try
             {
-                return ComisionesData.GetAll();
+                return ComisionData.GetAll();
             }
             catch (Exception Ex)
             {
@@ -46,7 +46,7 @@ public ComisionesAdapter ComisionesData { get => _ComisionesData; set => _Comisi
         {
             try
             {
-                ComisionesData.Delete(ID);
+                ComisionData.Delete(ID);
             }
             catch (Exception Ex)
             {
@@ -54,11 +54,11 @@ public ComisionesAdapter ComisionesData { get => _ComisionesData; set => _Comisi
             }
         }
 
-        public void Save(Comisiones com)
+        public void Save(Comision com)
         {
             try
             {
-                ComisionesData.Save(com);
+                ComisionData.Save(com);
             }
             catch (Exception Ex) { throw Ex; }
         }

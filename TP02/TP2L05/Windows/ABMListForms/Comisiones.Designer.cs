@@ -1,17 +1,17 @@
 ﻿
-namespace Windows
+namespace Windows.ABMListForms
 {
-    partial class Usuarios
+    partial class Comisiones
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,24 +21,22 @@ namespace Windows
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarios));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comisiones));
             this.tcUsuarios = new System.Windows.Forms.ToolStripContainer();
-            this.tlUsuarios = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.tlComisiones = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvComisiones = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.habilitado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Año = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.tscUsuarios = new System.Windows.Forms.ToolStrip();
@@ -48,8 +46,8 @@ namespace Windows
             this.tcUsuarios.ContentPanel.SuspendLayout();
             this.tcUsuarios.TopToolStripPanel.SuspendLayout();
             this.tcUsuarios.SuspendLayout();
-            this.tlUsuarios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            this.tlComisiones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).BeginInit();
             this.tscUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +56,7 @@ namespace Windows
             // 
             // tcUsuarios.ContentPanel
             // 
-            this.tcUsuarios.ContentPanel.Controls.Add(this.tlUsuarios);
+            this.tcUsuarios.ContentPanel.Controls.Add(this.tlComisiones);
             this.tcUsuarios.ContentPanel.Size = new System.Drawing.Size(683, 383);
             this.tcUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcUsuarios.Location = new System.Drawing.Point(0, 0);
@@ -71,44 +69,42 @@ namespace Windows
             // 
             this.tcUsuarios.TopToolStripPanel.Controls.Add(this.tscUsuarios);
             // 
-            // tlUsuarios
+            // tlComisiones
             // 
-            this.tlUsuarios.ColumnCount = 2;
-            this.tlUsuarios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlUsuarios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tlUsuarios.Controls.Add(this.dgvUsuarios, 0, 0);
-            this.tlUsuarios.Controls.Add(this.btnSalir, 1, 1);
-            this.tlUsuarios.Controls.Add(this.btnActualizar, 0, 1);
-            this.tlUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlUsuarios.Location = new System.Drawing.Point(0, 0);
-            this.tlUsuarios.Name = "tlUsuarios";
-            this.tlUsuarios.RowCount = 2;
-            this.tlUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlUsuarios.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlUsuarios.Size = new System.Drawing.Size(683, 383);
-            this.tlUsuarios.TabIndex = 0;
+            this.tlComisiones.ColumnCount = 2;
+            this.tlComisiones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlComisiones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlComisiones.Controls.Add(this.dgvComisiones, 0, 0);
+            this.tlComisiones.Controls.Add(this.btnSalir, 1, 1);
+            this.tlComisiones.Controls.Add(this.btnActualizar, 0, 1);
+            this.tlComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlComisiones.Location = new System.Drawing.Point(0, 0);
+            this.tlComisiones.Name = "tlComisiones";
+            this.tlComisiones.RowCount = 2;
+            this.tlComisiones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlComisiones.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlComisiones.Size = new System.Drawing.Size(683, 383);
+            this.tlComisiones.TabIndex = 0;
             // 
-            // dgvUsuarios
+            // dgvComisiones
             // 
-            this.dgvUsuarios.AllowUserToAddRows = false;
-            this.dgvUsuarios.AllowUserToDeleteRows = false;
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvComisiones.AllowUserToAddRows = false;
+            this.dgvComisiones.AllowUserToDeleteRows = false;
+            this.dgvComisiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvComisiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
-            this.nombre,
-            this.apellido,
-            this.usuario,
-            this.email,
-            this.habilitado});
-            this.tlUsuarios.SetColumnSpan(this.dgvUsuarios, 2);
-            this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUsuarios.Location = new System.Drawing.Point(3, 3);
-            this.dgvUsuarios.MultiSelect = false;
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.ReadOnly = true;
-            this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsuarios.Size = new System.Drawing.Size(677, 348);
-            this.dgvUsuarios.TabIndex = 0;
+            this.Descripcion,
+            this.Año,
+            this.Plan});
+            this.tlComisiones.SetColumnSpan(this.dgvComisiones, 2);
+            this.dgvComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvComisiones.Location = new System.Drawing.Point(3, 3);
+            this.dgvComisiones.MultiSelect = false;
+            this.dgvComisiones.Name = "dgvComisiones";
+            this.dgvComisiones.ReadOnly = true;
+            this.dgvComisiones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvComisiones.Size = new System.Drawing.Size(677, 348);
+            this.dgvComisiones.TabIndex = 0;
             // 
             // id
             // 
@@ -119,61 +115,40 @@ namespace Windows
             this.id.ReadOnly = true;
             this.id.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // nombre
+            // Descripcion
             // 
-            this.nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nombre.DataPropertyName = "Nombre";
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Descripcion.DataPropertyName = "DescComision";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // apellido
+            // Año
             // 
-            this.apellido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.apellido.DataPropertyName = "Apellido";
-            this.apellido.HeaderText = "Apellido";
-            this.apellido.Name = "apellido";
-            this.apellido.ReadOnly = true;
-            this.apellido.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Año.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Año.DataPropertyName = "AnioEspecialidad";
+            this.Año.HeaderText = "Año";
+            this.Año.Name = "Año";
+            this.Año.ReadOnly = true;
+            this.Año.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // usuario
+            // Plan
             // 
-            this.usuario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.usuario.DataPropertyName = "NombreUsuario";
-            this.usuario.HeaderText = "Usuario";
-            this.usuario.Name = "usuario";
-            this.usuario.ReadOnly = true;
-            this.usuario.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // email
-            // 
-            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.email.DataPropertyName = "Email";
-            this.email.HeaderText = "EMail";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            this.email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // habilitado
-            // 
-            this.habilitado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.habilitado.DataPropertyName = "Habilitado";
-            this.habilitado.HeaderText = "Habilitado";
-            this.habilitado.Name = "habilitado";
-            this.habilitado.ReadOnly = true;
-            this.habilitado.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.habilitado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Plan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Plan.DataPropertyName = "IdPlan";
+            this.Plan.HeaderText = "Plan";
+            this.Plan.Name = "Plan";
+            this.Plan.ReadOnly = true;
+            this.Plan.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(605, 357);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 2;
+            this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnActualizar
             // 
@@ -231,7 +206,7 @@ namespace Windows
             this.tsbEliminar.ToolTipText = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
-            // Usuarios
+            // Comisiones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -240,17 +215,17 @@ namespace Windows
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Usuarios";
+            this.Name = "Comisiones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Usuarios";
+            this.Text = "Comisiones";
             this.Load += new System.EventHandler(this.Usuarios_Load);
             this.tcUsuarios.ContentPanel.ResumeLayout(false);
             this.tcUsuarios.TopToolStripPanel.ResumeLayout(false);
             this.tcUsuarios.TopToolStripPanel.PerformLayout();
             this.tcUsuarios.ResumeLayout(false);
             this.tcUsuarios.PerformLayout();
-            this.tlUsuarios.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            this.tlComisiones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).EndInit();
             this.tscUsuarios.ResumeLayout(false);
             this.tscUsuarios.PerformLayout();
             this.ResumeLayout(false);
@@ -260,20 +235,17 @@ namespace Windows
         #endregion
 
         private System.Windows.Forms.ToolStripContainer tcUsuarios;
-        private System.Windows.Forms.TableLayoutPanel tlUsuarios;
-        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.TableLayoutPanel tlComisiones;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.ToolStrip tscUsuarios;
-        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.DataGridView dgvComisiones;
         private System.Windows.Forms.ToolStripButton tsbNuevo;
         private System.Windows.Forms.ToolStripButton tsbEditar;
         private System.Windows.Forms.ToolStripButton tsbEliminar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn habilitado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Año;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Plan;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
-

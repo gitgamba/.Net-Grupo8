@@ -38,12 +38,11 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessEntity.cs" />
-    <Compile Include="TablesEntities\Comisiones.cs" />
+    <Compile Include="TablesEntities\Comision.cs" />
     <Compile Include="Modulo.cs" />
     <Compile Include="ModuloUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

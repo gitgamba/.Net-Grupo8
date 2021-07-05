@@ -18,12 +18,12 @@ namespace Windows
             InitializeComponent();
         }
 
-        public Comisiones ComisionActual { get ; set; }
+        public Comision ComisionActual { get ; set; }
         public ComisionesDesktop(ModoForm modo) : this()
         {
             Text = modo.ToString();
             Modo = modo;
-            ComisionActual = new Business.Entities.Comisiones();
+            ComisionActual = new Business.Entities.Comision();
         }
 
         public ComisionesDesktop(int ID, ModoForm modo) : this()
@@ -61,7 +61,7 @@ namespace Windows
 
         public override void MapearADatos()
         {
-            if (Modo == ModoForm.Alta) ComisionActual = new Comisiones();
+            if (Modo == ModoForm.Alta) ComisionActual = new Comision();
 
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {

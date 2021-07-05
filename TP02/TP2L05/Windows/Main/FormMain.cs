@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Windows.ABMListForms;
 
 namespace Windows.Main
 {
@@ -53,8 +55,8 @@ namespace Windows.Main
 
         private void btnComisiones_Click(object sender, EventArgs e)
         {
-            //Comisiones com = new Comisiones();
-            //com.ShowDialog();
+            Comisiones com = new Comisiones();
+            com.ShowDialog();
 
         }
     }
