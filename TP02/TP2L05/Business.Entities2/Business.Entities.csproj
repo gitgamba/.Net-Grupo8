@@ -46,7 +46,7 @@
     <Compile Include="Modulo.cs" />
     <Compile Include="ModuloUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Usuario.cs" />
+    <Compile Include="TablesEntities\Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

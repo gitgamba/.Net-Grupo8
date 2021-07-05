@@ -84,6 +84,18 @@ namespace Windows.Main
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("HACE MEMORIA PA!!", "Olvidé mi contraseña",
+        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+
+        private void btn_login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }
                    
