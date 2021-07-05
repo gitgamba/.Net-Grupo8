@@ -50,5 +50,12 @@ namespace Windows.Main
             us.ShowDialog();
             
         }
+
+        private void btnComisiones_Click(object sender, EventArgs e)
+        {
+            //Comisiones com = new Comisiones();
+            //com.ShowDialog();
+
+        }
     }
 }
