@@ -5,11 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using Business.Entities;
-using Business.Logic;
 
-
-namespace Windows
+namespace Windows.ABMListForms
 {
     public partial class ComisionesDesktop : Windows.ApplicationForm
     {
@@ -18,22 +15,9 @@ namespace Windows
             InitializeComponent();
         }
 
-        public Comisiones ComisionActual { get ; set; }
-        public ComisionesDesktop(ModoForm modo) : this()
+        private void label4_Click(object sender, EventArgs e)
         {
-            Text = modo.ToString();
-            Modo = modo;
-            ComisionActual = new Business.Entities.Comisiones();
+
         }
-
-       
-
-
-
-
-
-
-
-
     }
 }

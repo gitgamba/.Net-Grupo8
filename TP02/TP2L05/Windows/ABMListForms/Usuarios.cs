@@ -25,6 +25,7 @@ namespace Windows
             UsuarioLogic ul = new UsuarioLogic();
 
             try { this.dgvUsuarios.DataSource = ul.getAll(); }
+<<<<<<< HEAD
             catch (Exception Ex) { MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error); ; }
 
 
@@ -33,6 +34,11 @@ namespace Windows
         }
 
 
+=======
+            catch(Exception Ex) { MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error); ;  }
+        }
+
+>>>>>>> 2b74063e1ed834291b3066b652e3ba4681257c49
         private void Usuarios_Load(object sender, EventArgs e)
         {
             dgvUsuarios.AutoGenerateColumns = false;

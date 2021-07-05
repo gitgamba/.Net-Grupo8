@@ -29,6 +29,7 @@ namespace Windows
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             ////////this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ////////this.SuspendLayout();
             ////////// 
@@ -51,13 +52,19 @@ namespace Windows
             ////////this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             ////////this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             ////////this.tableLayoutPanel1.TabIndex = 0;
+=======
+            this.SuspendLayout();
+>>>>>>> 2b74063e1ed834291b3066b652e3ba4681257c49
             // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+<<<<<<< HEAD
             ////////this.Controls.Add(this.tableLayoutPanel1);
+=======
+>>>>>>> 2b74063e1ed834291b3066b652e3ba4681257c49
             this.Name = "ApplicationForm";
             this.Text = "ApplicationForm";
             this.ResumeLayout(false);
@@ -66,7 +73,5 @@ namespace Windows
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
