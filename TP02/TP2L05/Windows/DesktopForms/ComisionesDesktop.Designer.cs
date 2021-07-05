@@ -50,7 +50,7 @@ namespace Windows
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.81042F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.18958F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.tableLayoutPanel1.Controls.Add(this.lbID, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbDescripcion, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lbAnio, 1, 3);
@@ -82,7 +82,7 @@ namespace Windows
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbID.AutoSize = true;
-            this.lbID.Location = new System.Drawing.Point(62, 47);
+            this.lbID.Location = new System.Drawing.Point(61, 47);
             this.lbID.Name = "lbID";
             this.lbID.Size = new System.Drawing.Size(83, 47);
             this.lbID.TabIndex = 0;
@@ -93,7 +93,7 @@ namespace Windows
             // 
             this.lbDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbDescripcion.AutoSize = true;
-            this.lbDescripcion.Location = new System.Drawing.Point(62, 123);
+            this.lbDescripcion.Location = new System.Drawing.Point(61, 123);
             this.lbDescripcion.Name = "lbDescripcion";
             this.lbDescripcion.Size = new System.Drawing.Size(83, 13);
             this.lbDescripcion.TabIndex = 1;
@@ -104,7 +104,7 @@ namespace Windows
             // 
             this.lbAnio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbAnio.AutoSize = true;
-            this.lbAnio.Location = new System.Drawing.Point(62, 193);
+            this.lbAnio.Location = new System.Drawing.Point(61, 193);
             this.lbAnio.Name = "lbAnio";
             this.lbAnio.Size = new System.Drawing.Size(83, 13);
             this.lbAnio.TabIndex = 2;
@@ -115,7 +115,7 @@ namespace Windows
             // 
             this.lbPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbPlan.AutoSize = true;
-            this.lbPlan.Location = new System.Drawing.Point(62, 262);
+            this.lbPlan.Location = new System.Drawing.Point(61, 262);
             this.lbPlan.Name = "lbPlan";
             this.lbPlan.Size = new System.Drawing.Size(83, 13);
             this.lbPlan.TabIndex = 3;
@@ -125,7 +125,7 @@ namespace Windows
             // btnAceptar
             // 
             this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnAceptar.Location = new System.Drawing.Point(304, 367);
+            this.btnAceptar.Location = new System.Drawing.Point(303, 367);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 5;
@@ -135,26 +135,28 @@ namespace Windows
             // btnSalir
             // 
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSalir.Location = new System.Drawing.Point(386, 367);
+            this.btnSalir.Location = new System.Drawing.Point(385, 367);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(73, 23);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtID
             // 
             this.txtID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtID.Location = new System.Drawing.Point(215, 60);
+            this.txtID.Location = new System.Drawing.Point(214, 60);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 7;
+            this.txtID.TabStop = false;
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDescripcion.Location = new System.Drawing.Point(215, 120);
+            this.txtDescripcion.Location = new System.Drawing.Point(214, 120);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
             this.txtDescripcion.TabIndex = 8;
@@ -162,7 +164,7 @@ namespace Windows
             // txtAnio
             // 
             this.txtAnio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtAnio.Location = new System.Drawing.Point(215, 189);
+            this.txtAnio.Location = new System.Drawing.Point(214, 189);
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(100, 20);
             this.txtAnio.TabIndex = 9;
@@ -171,7 +173,7 @@ namespace Windows
             // 
             this.lbNoPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNoPlan.AutoSize = true;
-            this.lbNoPlan.Location = new System.Drawing.Point(151, 262);
+            this.lbNoPlan.Location = new System.Drawing.Point(150, 262);
             this.lbNoPlan.Name = "lbNoPlan";
             this.lbNoPlan.Size = new System.Drawing.Size(228, 13);
             this.lbNoPlan.TabIndex = 10;
@@ -181,7 +183,7 @@ namespace Windows
             // 
             this.btnSeleccionarPlan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSeleccionarPlan.Location = new System.Drawing.Point(151, 307);
+            this.btnSeleccionarPlan.Location = new System.Drawing.Point(150, 307);
             this.btnSeleccionarPlan.Name = "btnSeleccionarPlan";
             this.btnSeleccionarPlan.Size = new System.Drawing.Size(228, 23);
             this.btnSeleccionarPlan.TabIndex = 4;

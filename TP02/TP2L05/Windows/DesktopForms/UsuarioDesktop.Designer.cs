@@ -254,7 +254,6 @@ namespace Windows
             this.MinimizeBox = false;
             this.Name = "UsuarioDesktop";
             this.Text = "Usuario";
-            this.Controls.SetChildIndex(this.tableLayoutPanel1, 0);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

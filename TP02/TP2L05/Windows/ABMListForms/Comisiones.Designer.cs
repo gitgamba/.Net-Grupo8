@@ -30,7 +30,7 @@ namespace Windows.ABMListForms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comisiones));
-            this.tcUsuarios = new System.Windows.Forms.ToolStripContainer();
+            this.tcComisiones = new System.Windows.Forms.ToolStripContainer();
             this.tlComisiones = new System.Windows.Forms.TableLayoutPanel();
             this.dgvComisiones = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,35 +39,35 @@ namespace Windows.ABMListForms
             this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.tscUsuarios = new System.Windows.Forms.ToolStrip();
+            this.tsComisiones = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
-            this.tcUsuarios.ContentPanel.SuspendLayout();
-            this.tcUsuarios.TopToolStripPanel.SuspendLayout();
-            this.tcUsuarios.SuspendLayout();
+            this.tcComisiones.ContentPanel.SuspendLayout();
+            this.tcComisiones.TopToolStripPanel.SuspendLayout();
+            this.tcComisiones.SuspendLayout();
             this.tlComisiones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).BeginInit();
-            this.tscUsuarios.SuspendLayout();
+            this.tsComisiones.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tcUsuarios
+            // tcComisiones
             // 
             // 
-            // tcUsuarios.ContentPanel
+            // tcComisiones.ContentPanel
             // 
-            this.tcUsuarios.ContentPanel.Controls.Add(this.tlComisiones);
-            this.tcUsuarios.ContentPanel.Size = new System.Drawing.Size(683, 383);
-            this.tcUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcUsuarios.Location = new System.Drawing.Point(0, 0);
-            this.tcUsuarios.Name = "tcUsuarios";
-            this.tcUsuarios.Size = new System.Drawing.Size(683, 408);
-            this.tcUsuarios.TabIndex = 0;
-            this.tcUsuarios.Text = "toolStripContainer1";
+            this.tcComisiones.ContentPanel.Controls.Add(this.tlComisiones);
+            this.tcComisiones.ContentPanel.Size = new System.Drawing.Size(683, 383);
+            this.tcComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcComisiones.Location = new System.Drawing.Point(0, 0);
+            this.tcComisiones.Name = "tcComisiones";
+            this.tcComisiones.Size = new System.Drawing.Size(683, 408);
+            this.tcComisiones.TabIndex = 0;
+            this.tcComisiones.Text = "toolStripContainer1";
             // 
-            // tcUsuarios.TopToolStripPanel
+            // tcComisiones.TopToolStripPanel
             // 
-            this.tcUsuarios.TopToolStripPanel.Controls.Add(this.tscUsuarios);
+            this.tcComisiones.TopToolStripPanel.Controls.Add(this.tsComisiones);
             // 
             // tlComisiones
             // 
@@ -161,17 +161,17 @@ namespace Windows.ABMListForms
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // tscUsuarios
+            // tsComisiones
             // 
-            this.tscUsuarios.Dock = System.Windows.Forms.DockStyle.None;
-            this.tscUsuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsComisiones.Dock = System.Windows.Forms.DockStyle.None;
+            this.tsComisiones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbNuevo,
             this.tsbEditar,
             this.tsbEliminar});
-            this.tscUsuarios.Location = new System.Drawing.Point(3, 0);
-            this.tscUsuarios.Name = "tscUsuarios";
-            this.tscUsuarios.Size = new System.Drawing.Size(81, 25);
-            this.tscUsuarios.TabIndex = 0;
+            this.tsComisiones.Location = new System.Drawing.Point(3, 0);
+            this.tsComisiones.Name = "tsComisiones";
+            this.tsComisiones.Size = new System.Drawing.Size(112, 25);
+            this.tsComisiones.TabIndex = 0;
             // 
             // tsbNuevo
             // 
@@ -211,7 +211,7 @@ namespace Windows.ABMListForms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 408);
-            this.Controls.Add(this.tcUsuarios);
+            this.Controls.Add(this.tcComisiones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -219,25 +219,25 @@ namespace Windows.ABMListForms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comisiones";
             this.Load += new System.EventHandler(this.Usuarios_Load);
-            this.tcUsuarios.ContentPanel.ResumeLayout(false);
-            this.tcUsuarios.TopToolStripPanel.ResumeLayout(false);
-            this.tcUsuarios.TopToolStripPanel.PerformLayout();
-            this.tcUsuarios.ResumeLayout(false);
-            this.tcUsuarios.PerformLayout();
+            this.tcComisiones.ContentPanel.ResumeLayout(false);
+            this.tcComisiones.TopToolStripPanel.ResumeLayout(false);
+            this.tcComisiones.TopToolStripPanel.PerformLayout();
+            this.tcComisiones.ResumeLayout(false);
+            this.tcComisiones.PerformLayout();
             this.tlComisiones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvComisiones)).EndInit();
-            this.tscUsuarios.ResumeLayout(false);
-            this.tscUsuarios.PerformLayout();
+            this.tsComisiones.ResumeLayout(false);
+            this.tsComisiones.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ToolStripContainer tcUsuarios;
+        private System.Windows.Forms.ToolStripContainer tcComisiones;
         private System.Windows.Forms.TableLayoutPanel tlComisiones;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.ToolStrip tscUsuarios;
+        private System.Windows.Forms.ToolStrip tsComisiones;
         private System.Windows.Forms.DataGridView dgvComisiones;
         private System.Windows.Forms.ToolStripButton tsbNuevo;
         private System.Windows.Forms.ToolStripButton tsbEditar;
