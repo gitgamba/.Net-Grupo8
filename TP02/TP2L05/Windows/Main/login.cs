@@ -50,7 +50,7 @@ namespace Windows.Main
                     }
                     else if (usr.NombreUsuario != textBox1.Text || usr.Clave != textBox2.Text)
                     {
-                        NotificarError("error", "Contraseña incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        NotificarError("error", "Usuario o Contraseña incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
@@ -61,7 +61,7 @@ namespace Windows.Main
             catch (Exception Ex)
 
             {
-                NotificarError("error", Ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                NotificarError("error", "Usuario o Contraseña incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
