@@ -25,8 +25,13 @@ namespace Windows
             UsuarioLogic ul = new UsuarioLogic();
 
             try { this.dgvUsuarios.DataSource = ul.getAll(); }
-            catch(Exception Ex) { MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error); ;  }
+            catch (Exception Ex) { MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error); ; }
+
+
+            //usuario.DataPropertyName = "NombreUsuario";
+
         }
+
 
         private void Usuarios_Load(object sender, EventArgs e)
         {

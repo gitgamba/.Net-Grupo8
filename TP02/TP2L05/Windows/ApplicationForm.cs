@@ -20,12 +20,27 @@ namespace Windows // esto desde un principio tendriamos que haberlo llamado UI.D
         public enum ModoForm
         { Alta, Baja, Modificacion, Consulta };
 
-        public ModoForm Modo { get; set; }
+        public ModoForm Modo 
+        { 
+            get; set;
+        }
 
-        public virtual void MapearDeDatos() { }
-        public virtual void MapearADatos() { }
-        public virtual void GuardarCambios() { }
-        public virtual bool Validar() { return false; }
+        public virtual void MapearDeDatos()
+        {
+        
+        }
+        public virtual void MapearADatos()
+        { 
+        
+        }
+        public virtual void GuardarCambios()
+        { 
+        
+        }
+        public virtual bool Validar()
+        { 
+            return false; 
+        }
         public void Notificar(string titulo, string mensaje, MessageBoxButtons botones, MessageBoxIcon icono)
         {
             MessageBox.Show(mensaje, titulo, botones, icono);

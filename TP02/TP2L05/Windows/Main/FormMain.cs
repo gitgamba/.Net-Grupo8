@@ -44,6 +44,11 @@ namespace Windows.Main
             }
         }
 
-
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            Usuarios us = new Usuarios();
+            us.ShowDialog();
+            
+        }
     }
 }
