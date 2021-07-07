@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Windows.ABMListForms
+namespace Windows
 {
     public partial class Comisiones : Form
     {
@@ -102,6 +102,9 @@ namespace Windows.ABMListForms
 
         }
 
-     
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

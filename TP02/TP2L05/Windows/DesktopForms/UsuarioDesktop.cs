@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Business.Entities;
 using Business.Logic;
+using System.Text.RegularExpressions;
+
 
 namespace Windows
 {
-    public partial class UsuarioDesktop : Windows.ApplicationForm
+    public partial class UsuarioDesktop : ApplicationForm
     {
         public UsuarioDesktop()
         {

@@ -1,5 +1,5 @@
 ﻿
-namespace Windows.ABMListForms
+namespace Windows
 {
     partial class Comisiones
     {
@@ -149,6 +149,7 @@ namespace Windows.ABMListForms
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click_1);
             // 
             // btnActualizar
             // 
@@ -170,7 +171,7 @@ namespace Windows.ABMListForms
             this.tsbEliminar});
             this.tsComisiones.Location = new System.Drawing.Point(3, 0);
             this.tsComisiones.Name = "tsComisiones";
-            this.tsComisiones.Size = new System.Drawing.Size(112, 25);
+            this.tsComisiones.Size = new System.Drawing.Size(81, 25);
             this.tsComisiones.TabIndex = 0;
             // 
             // tsbNuevo

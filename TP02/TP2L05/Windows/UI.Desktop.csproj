@@ -55,10 +55,10 @@
     <Compile Include="ABMListForms\Comisiones.Designer.cs">
       <DependentUpon>Comisiones.cs</DependentUpon>
     </Compile>
-    <Compile Include="ApplicationForm.cs">
+    <Compile Include="DesktopForms\ApplicationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApplicationForm.Designer.cs">
+    <Compile Include="DesktopForms\ApplicationForm.Designer.cs">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DesktopForms\ComisionesDesktop.cs">
@@ -66,6 +66,12 @@
     </Compile>
     <Compile Include="DesktopForms\ComisionesDesktop.Designer.cs">
       <DependentUpon>ComisionesDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopForms\PlanDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesktopForms\PlanDesktop.Designer.cs">
+      <DependentUpon>PlanDesktop.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\login.cs">
       <SubType>Form</SubType>
@@ -96,11 +102,14 @@
     <EmbeddedResource Include="ABMListForms\Comisiones.resx">
       <DependentUpon>Comisiones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ApplicationForm.resx">
+    <EmbeddedResource Include="DesktopForms\ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DesktopForms\ComisionesDesktop.resx">
       <DependentUpon>ComisionesDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopForms\PlanDesktop.resx">
+      <DependentUpon>PlanDesktop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\login.resx">
       <DependentUpon>login.cs</DependentUpon>

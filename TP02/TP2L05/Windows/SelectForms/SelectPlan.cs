@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Windows.ABMListForms
+namespace Windows
 {
-    public partial class ComisionesDesktop : Windows.ApplicationForm
+    public partial class SelectPlan : Form
     {
-        public ComisionesDesktop()
+        public SelectPlan()
         {
             InitializeComponent();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
