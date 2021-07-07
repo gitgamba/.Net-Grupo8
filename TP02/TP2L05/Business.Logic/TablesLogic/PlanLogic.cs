@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 using Business.Entities;
 using Data.Database;
 
+
 namespace Business.Logic
 {
-    public class ComisionesLogic : BusinessLogic
+   public class PlanLogic : BusinessLogic
     {
-       public ComisionesLogic()
+        public PlanLogic()
         {
-            this.ComisionData = new ComisionAdapter();
+            this.PlanData = new PlanAdapter();
         }
 
-        private ComisionAdapter _ComisionData;
-        public ComisionAdapter ComisionData { get => _ComisionData; set => _ComisionData = value; }
+        private PlanAdapter _PlanData;
+        public PlanAdapter PlanData { get => _PlanData; set => _PlanData = value; }
 
-        public Comision GetOneId(int ID)
+        public Plan GetOneId(int ID)
         {
             try
             {
-                return ComisionData.GetOne(ID);
+                return PlanData.GetOne(ID);
             }
             catch (Exception Ex)
             {
@@ -30,11 +31,11 @@ namespace Business.Logic
             }
         }
 
-        public List<Comision> getAll()
+        public List<Plan> getAll()
         {
             try
             {
-                return ComisionData.GetAll();
+                return PlanData.GetAll();
             }
             catch (Exception Ex)
             {
@@ -46,7 +47,7 @@ namespace Business.Logic
         {
             try
             {
-                ComisionData.Delete(ID);
+                PlanData.Delete(ID);
             }
             catch (Exception Ex)
             {
@@ -54,15 +55,16 @@ namespace Business.Logic
             }
         }
 
-        public void Save(Comision com)
+        public void Save(Plan pl)
         {
             try
             {
-                ComisionData.Save(com);
+                PlanData.Save(pl);
             }
             catch (Exception Ex) { throw Ex; }
         }
-      
+
     }
+
 }
 

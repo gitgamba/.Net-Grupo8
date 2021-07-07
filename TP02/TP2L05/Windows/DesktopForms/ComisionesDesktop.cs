@@ -127,6 +127,20 @@ namespace Windows
         {
             this.Close();
         }
+
+        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAceptar_Click_1(object sender, EventArgs e)
+        {
+            if (Validar())
+            {
+                GuardarCambios();
+                this.Close();
+            }
+        }
     }
 
 
