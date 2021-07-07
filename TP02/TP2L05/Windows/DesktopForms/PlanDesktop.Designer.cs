@@ -57,8 +57,8 @@ namespace Windows.DesktopForms
             this.tlPlan.Controls.Add(this.btnAceptar, 2, 5);
             this.tlPlan.Controls.Add(this.txtDesc, 2, 2);
             this.tlPlan.Controls.Add(this.txtID, 2, 1);
-            this.tlPlan.Controls.Add(this.btnSeleccionarEspecialidad, 1, 4);
             this.tlPlan.Controls.Add(this.lbNombreEspecialidad, 2, 3);
+            this.tlPlan.Controls.Add(this.btnSeleccionarEspecialidad, 2, 4);
             this.tlPlan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlPlan.Location = new System.Drawing.Point(0, 0);
             this.tlPlan.Margin = new System.Windows.Forms.Padding(2);
@@ -70,7 +70,7 @@ namespace Windows.DesktopForms
             this.tlPlan.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlPlan.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlPlan.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlPlan.Size = new System.Drawing.Size(439, 277);
+            this.tlPlan.Size = new System.Drawing.Size(510, 327);
             this.tlPlan.TabIndex = 1;
             // 
             // lblText
@@ -79,10 +79,10 @@ namespace Windows.DesktopForms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblText.AutoSize = true;
-            this.lblText.Location = new System.Drawing.Point(78, 50);
+            this.lblText.Location = new System.Drawing.Point(93, 60);
             this.lblText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(113, 49);
+            this.lblText.Size = new System.Drawing.Size(137, 59);
             this.lblText.TabIndex = 1;
             this.lblText.Text = "ID:";
             this.lblText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -93,10 +93,10 @@ namespace Windows.DesktopForms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDesc.AutoSize = true;
-            this.lblDesc.Location = new System.Drawing.Point(78, 99);
+            this.lblDesc.Location = new System.Drawing.Point(93, 119);
             this.lblDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(113, 49);
+            this.lblDesc.Size = new System.Drawing.Size(137, 59);
             this.lblDesc.TabIndex = 8;
             this.lblDesc.Text = "Descripcion:";
             this.lblDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,10 +107,10 @@ namespace Windows.DesktopForms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEspecialidad.AutoSize = true;
-            this.lblEspecialidad.Location = new System.Drawing.Point(78, 148);
+            this.lblEspecialidad.Location = new System.Drawing.Point(93, 178);
             this.lblEspecialidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEspecialidad.Name = "lblEspecialidad";
-            this.lblEspecialidad.Size = new System.Drawing.Size(113, 49);
+            this.lblEspecialidad.Size = new System.Drawing.Size(137, 59);
             this.lblEspecialidad.TabIndex = 10;
             this.lblEspecialidad.Text = "Especialidad:";
             this.lblEspecialidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,18 +118,19 @@ namespace Windows.DesktopForms
             // btnSalir
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalir.Location = new System.Drawing.Point(362, 252);
+            this.btnSalir.Location = new System.Drawing.Point(433, 302);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 13;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnAceptar
             // 
             this.btnAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAceptar.Location = new System.Drawing.Point(281, 252);
+            this.btnAceptar.Location = new System.Drawing.Point(353, 302);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
@@ -140,7 +141,7 @@ namespace Windows.DesktopForms
             // txtDesc
             // 
             this.txtDesc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDesc.Location = new System.Drawing.Point(219, 113);
+            this.txtDesc.Location = new System.Drawing.Point(275, 138);
             this.txtDesc.Margin = new System.Windows.Forms.Padding(2);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(112, 20);
@@ -149,7 +150,7 @@ namespace Windows.DesktopForms
             // txtID
             // 
             this.txtID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtID.Location = new System.Drawing.Point(219, 64);
+            this.txtID.Location = new System.Drawing.Point(275, 79);
             this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
@@ -158,11 +159,12 @@ namespace Windows.DesktopForms
             // 
             // btnSeleccionarEspecialidad
             // 
-            this.btnSeleccionarEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSeleccionarEspecialidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.tlPlan.SetColumnSpan(this.btnSeleccionarEspecialidad, 2);
-            this.btnSeleccionarEspecialidad.Location = new System.Drawing.Point(144, 210);
+            this.btnSeleccionarEspecialidad.Location = new System.Drawing.Point(234, 255);
             this.btnSeleccionarEspecialidad.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeleccionarEspecialidad.Name = "btnSeleccionarEspecialidad";
+            this.btnSeleccionarEspecialidad.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSeleccionarEspecialidad.Size = new System.Drawing.Size(145, 23);
             this.btnSeleccionarEspecialidad.TabIndex = 14;
             this.btnSeleccionarEspecialidad.Text = "Seleccionar Especialidad";
@@ -174,10 +176,10 @@ namespace Windows.DesktopForms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNombreEspecialidad.AutoSize = true;
-            this.lbNombreEspecialidad.Location = new System.Drawing.Point(195, 148);
+            this.lbNombreEspecialidad.Location = new System.Drawing.Point(234, 178);
             this.lbNombreEspecialidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNombreEspecialidad.Name = "lbNombreEspecialidad";
-            this.lbNombreEspecialidad.Size = new System.Drawing.Size(161, 49);
+            this.lbNombreEspecialidad.Size = new System.Drawing.Size(194, 59);
             this.lbNombreEspecialidad.TabIndex = 15;
             this.lbNombreEspecialidad.Text = "No selecciono ninguna Especialidad";
             this.lbNombreEspecialidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,7 +187,7 @@ namespace Windows.DesktopForms
             // PlanDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(439, 277);
+            this.ClientSize = new System.Drawing.Size(510, 327);
             this.Controls.Add(this.tlPlan);
             this.Name = "PlanDesktop";
             this.tlPlan.ResumeLayout(false);

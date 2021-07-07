@@ -108,5 +108,14 @@ namespace Windows.DesktopForms
                 this.Close();
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void tlPlan_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
