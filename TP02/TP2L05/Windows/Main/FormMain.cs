@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Windows.ABMListForms;
 
 
 namespace Windows.Main
@@ -58,6 +59,12 @@ namespace Windows.Main
             Comisiones com = new Comisiones();
             com.ShowDialog();
 
+        }
+
+        private void btnPlan_Click(object sender, EventArgs e)
+        {
+            Planes pl = new Planes();
+            pl.ShowDialog();
         }
     }
 }

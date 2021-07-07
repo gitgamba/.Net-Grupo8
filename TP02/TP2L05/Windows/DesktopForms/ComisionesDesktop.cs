@@ -118,10 +118,7 @@ namespace Windows
             this.Close();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -141,6 +138,24 @@ namespace Windows
                 this.Close();
             }
         }
+
+        private void btnSeleccionarPlan_Click(object sender, EventArgs e)
+        {
+            SelectPlan sp = new SelectPlan();
+            DialogResult DRsp = sp.ShowDialog();
+            if(DRsp != DialogResult.Cancel)
+            {
+                lbNoPlan.Text = sp.DescSelectPlan;
+                   ComisionActual.IdPlan = sp.IdSelectPlan;
+            }
+        }
+
+        private void lbNoPlan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 
 

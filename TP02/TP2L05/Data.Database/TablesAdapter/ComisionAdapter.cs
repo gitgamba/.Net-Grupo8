@@ -130,7 +130,7 @@ namespace Data.Database
             try
             {
                 OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("UPDATE Comision SET desc_comision = @descCom, " +
+                SqlCommand cmdSave = new SqlCommand("UPDATE Comisiones SET desc_comision = @descCom, " +
                     "anio_especialidad= @AnioEsp, id_plan = @IdPlan " +
                     "WHERE id_comision = @id ", sqlConn);
 
@@ -157,7 +157,7 @@ namespace Data.Database
             try
             {
                 OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("INSERT INTO Comision (desc_comision,anio_especialidad,id_plan) " +
+                SqlCommand cmdSave = new SqlCommand("INSERT INTO Comisiones (desc_comision,anio_especialidad,id_plan) " +
                     "values(@desCom,@AnioEsp,@IdPlan) " +
                     "select @@identity ", sqlConn);
 

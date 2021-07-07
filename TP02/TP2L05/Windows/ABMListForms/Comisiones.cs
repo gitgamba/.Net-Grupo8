@@ -24,9 +24,6 @@ namespace Windows
             try { this.dgvComisiones.DataSource = cl.getAll(); }
             catch (Exception Ex) { MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error); ; }
 
-
-          
-
         }
 
 
