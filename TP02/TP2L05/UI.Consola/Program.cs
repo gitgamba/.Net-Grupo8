@@ -23,7 +23,7 @@ namespace UI.Consola
         {
             this.UsuarioNegocio = new UsuarioLogic();
         }
-        //private UsuarioLogic _UsuarioNegocio;
+        private UsuarioLogic _UsuarioNegocio;
         public UsuarioLogic UsuarioNegocio
         { get; set; }
         public void Menu()
@@ -103,7 +103,7 @@ namespace UI.Consola
                 Console.Clear();
                 Console.Write("Ingrese el ID del usuario a consultar: ");
                 int id = int.Parse(Console.ReadLine());
-                this.MostrarDatos(UsuarioNegocio.GetOneId(id));
+                this.MostrarDatos(UsuarioNegocio.getOne(id));
             }
             catch (FormatException)
             {
@@ -157,7 +157,7 @@ namespace UI.Consola
                 Console.Clear();
                 Console.Write("Ingrese el ID del Usuario a modificar: ");
                 int id = int.Parse(Console.ReadLine());
-                Usuario usuario = UsuarioNegocio.GetOneId(id);
+                Usuario usuario = UsuarioNegocio.getOne(id);
 
                 Console.Write("\nIngrese Nombre: ");
                 usuario.Nombre = Console.ReadLine();

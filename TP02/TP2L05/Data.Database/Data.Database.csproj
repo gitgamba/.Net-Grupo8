@@ -57,9 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter.cs" />
-    <Compile Include="TablesAdapter\ComisionAdapter.cs" />
-    <Compile Include="TablesAdapter\PlanAdapter.cs" />
-    <Compile Include="TablesAdapter\UsuarioAdapter.cs" />
+    <Compile Include="UsuarioAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
