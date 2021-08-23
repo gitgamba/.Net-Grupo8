@@ -27,7 +27,7 @@ namespace Windows
         }
 
 
-        private void Usuarios_Load(object sender, EventArgs e)
+        private void Comisiones_Load(object sender, EventArgs e)
         {
             dgvComisiones.AutoGenerateColumns = false;
             this.Listar();

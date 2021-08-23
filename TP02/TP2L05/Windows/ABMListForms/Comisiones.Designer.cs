@@ -53,15 +53,18 @@ namespace Windows
             // 
             // tcComisiones
             // 
+            this.tcComisiones.BottomToolStripPanelVisible = false;
             // 
             // tcComisiones.ContentPanel
             // 
             this.tcComisiones.ContentPanel.Controls.Add(this.tlComisiones);
-            this.tcComisiones.ContentPanel.Size = new System.Drawing.Size(683, 383);
+            this.tcComisiones.ContentPanel.Size = new System.Drawing.Size(815, 448);
             this.tcComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcComisiones.LeftToolStripPanelVisible = false;
             this.tcComisiones.Location = new System.Drawing.Point(0, 0);
             this.tcComisiones.Name = "tcComisiones";
-            this.tcComisiones.Size = new System.Drawing.Size(683, 408);
+            this.tcComisiones.RightToolStripPanelVisible = false;
+            this.tcComisiones.Size = new System.Drawing.Size(815, 473);
             this.tcComisiones.TabIndex = 0;
             this.tcComisiones.Text = "toolStripContainer1";
             // 
@@ -83,7 +86,7 @@ namespace Windows
             this.tlComisiones.RowCount = 2;
             this.tlComisiones.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlComisiones.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlComisiones.Size = new System.Drawing.Size(683, 383);
+            this.tlComisiones.Size = new System.Drawing.Size(815, 448);
             this.tlComisiones.TabIndex = 0;
             // 
             // dgvComisiones
@@ -103,7 +106,7 @@ namespace Windows
             this.dgvComisiones.Name = "dgvComisiones";
             this.dgvComisiones.ReadOnly = true;
             this.dgvComisiones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvComisiones.Size = new System.Drawing.Size(677, 348);
+            this.dgvComisiones.Size = new System.Drawing.Size(809, 413);
             this.dgvComisiones.TabIndex = 0;
             // 
             // id
@@ -144,7 +147,7 @@ namespace Windows
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(605, 357);
+            this.btnSalir.Location = new System.Drawing.Point(737, 422);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 1;
@@ -154,7 +157,7 @@ namespace Windows
             // btnActualizar
             // 
             this.btnActualizar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnActualizar.Location = new System.Drawing.Point(524, 357);
+            this.btnActualizar.Location = new System.Drawing.Point(656, 422);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 1;
@@ -211,7 +214,7 @@ namespace Windows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 408);
+            this.ClientSize = new System.Drawing.Size(815, 473);
             this.Controls.Add(this.tcComisiones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -219,7 +222,7 @@ namespace Windows
             this.Name = "Comisiones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comisiones";
-            this.Load += new System.EventHandler(this.Usuarios_Load);
+            this.Load += new System.EventHandler(this.Comisiones_Load);
             this.tcComisiones.ContentPanel.ResumeLayout(false);
             this.tcComisiones.TopToolStripPanel.ResumeLayout(false);
             this.tcComisiones.TopToolStripPanel.PerformLayout();

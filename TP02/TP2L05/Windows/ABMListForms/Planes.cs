@@ -17,10 +17,9 @@ namespace Windows
         public Planes()
         {
             InitializeComponent();
-            this.dgvPlanes.AutoGenerateColumns = false;
-            this.Listar(); 
+           
         }
-
+      
         public void Listar()
         {
             PlanLogic plan = new PlanLogic();
@@ -31,8 +30,9 @@ namespace Windows
 
         private void Planes_Load(object sender, EventArgs e)
         {
+            dgvPlanes.AutoGenerateColumns = false;
+            this.Listar();
             
-            Listar();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)

@@ -17,24 +17,20 @@ namespace Windows
         public Especialidades()
         {
             InitializeComponent();
-            this.dgvEspecialidades.AutoGenerateColumns = false;
+         
+        }
+        private void Especialidades_Load(object sender, EventArgs e)
+        {
+            dgvEspecialidades.AutoGenerateColumns = false;
             this.Listar();
         }
-
-      public void Listar()
+        public void Listar()
         {
             EspecialidadLogic especialidad = new EspecialidadLogic();
 
             try { this.dgvEspecialidades.DataSource = especialidad.getAll(); }
             catch (Exception Ex) { MessageBox.Show(Ex.Message + "\nError Interno: ", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error); ; }
         }
-
-        private void Especialidades_Load(object sender, EventArgs e)
-        {
-
-            Listar();
-        }
-
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             this.Listar();

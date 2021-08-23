@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace Windows
 {
     public partial class FormMain : Form
@@ -72,6 +73,12 @@ namespace Windows
         {
             Especialidades esp = new Especialidades();
             esp.ShowDialog(); 
+        }
+
+        private void btnMaterias_Click(object sender, EventArgs e)
+        {
+            Materias mat = new Materias();
+            mat.ShowDialog();
         }
     }
 }

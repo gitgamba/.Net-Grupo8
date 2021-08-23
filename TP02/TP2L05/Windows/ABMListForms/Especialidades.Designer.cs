@@ -215,7 +215,7 @@ namespace Windows
             this.tsEspecialidades.ResumeLayout(false);
             this.tsEspecialidades.PerformLayout();
             this.ResumeLayout(false);
-
+             this.Load += new System.EventHandler(this.Especialidades_Load);
         }
 
         #endregion

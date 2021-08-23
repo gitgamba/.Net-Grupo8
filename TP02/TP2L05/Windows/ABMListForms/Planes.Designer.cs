@@ -214,6 +214,8 @@ namespace Windows
             this.tsPlan.ResumeLayout(false);
             this.tsPlan.PerformLayout();
             this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Planes_Load);
+
 
         }
 

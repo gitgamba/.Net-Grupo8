@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Business.Entities;
 using Data.Database;
-
+using Data.Database.TablesAdapter;
 
 namespace Business.Logic
 {
@@ -13,22 +13,56 @@ namespace Business.Logic
     {
         public MateriasLogic()
         {
-            this.MateriasData = new MateriasAdapter();
+            this.MateriaData = new MateriasAdapter();
         }
-        private MateriasAdapter MateriasData;
-        public MateriasAdapter MateriasData { get => MateriasData; set => MateriasData = value; }
+        private MateriasAdapter _MateriaData;
+        public MateriasAdapter MateriaData { get => _MateriaData; set => _MateriaData = value; }
 
-        public Materias GetOneId(int ID)
+        public Materia GetOneId(int ID)
         {
             try
             {
-                return MateriasData.GetOne(ID);
+                return MateriaData.GetOne(ID);
             }
             catch (Exception Ex)
             {
                 throw Ex;
             }
         }
-    }
+        public List<Materia> getAll()
+        {
+            try
+            {
+                return MateriaData.GetAll();
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+        }
 
+        public void Delete(int ID)
+        {
+            try
+            {
+                MateriaData.Delete(ID);
+            }
+            catch (Exception Ex)
+            {
+                throw Ex;
+            }
+        }
+
+        public void Save(Materia com)
+        {
+            //try
+            //{
+            MateriaData.Save(com);
+            //}
+            //catch (Exception Ex) { throw Ex; }
+        }
+
+    }
 }
+
+

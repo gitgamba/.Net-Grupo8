@@ -109,7 +109,7 @@ namespace Windows
 
             if (!String.IsNullOrEmpty(txtEmail.Text.Trim())) 
             {
-                if (Business.Logic.Validaciones.EsMailValido(txtEmail.Text.Trim()))
+                //if (Business.Logic.Validaciones.EsMailValido(txtEmail.Text.Trim()))
                 {
                     mensaje += "Agregue un mail valido.\n";
                 }

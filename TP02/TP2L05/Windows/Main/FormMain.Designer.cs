@@ -35,6 +35,7 @@ namespace Windows
             this.btnPlan = new System.Windows.Forms.Button();
             this.btnEspecialidad = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnMaterias = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@ namespace Windows
             this.tableLayoutPanel1.Controls.Add(this.btnPlan, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnEspecialidad, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnSalir, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnMaterias, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -65,7 +67,7 @@ namespace Windows
             this.btnComisiones.Name = "btnComisiones";
             this.btnComisiones.Size = new System.Drawing.Size(75, 23);
             this.btnComisiones.TabIndex = 2;
-            this.btnComisiones.Text = "Comisiones";
+            this.btnComisiones.Text = "Comision";
             this.btnComisiones.UseVisualStyleBackColor = true;
             this.btnComisiones.Click += new System.EventHandler(this.btnComisiones_Click);
             // 
@@ -113,6 +115,17 @@ namespace Windows
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btnMaterias
+            // 
+            this.btnMaterias.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMaterias.Location = new System.Drawing.Point(183, 260);
+            this.btnMaterias.Name = "btnMaterias";
+            this.btnMaterias.Size = new System.Drawing.Size(75, 23);
+            this.btnMaterias.TabIndex = 4;
+            this.btnMaterias.Text = "Materia";
+            this.btnMaterias.UseVisualStyleBackColor = true;
+            this.btnMaterias.Click += new System.EventHandler(this.btnMaterias_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,5 +151,6 @@ namespace Windows
         private System.Windows.Forms.Button btnComisiones;
         private System.Windows.Forms.Button btnPlan;
         private System.Windows.Forms.Button btnEspecialidad;
+        private System.Windows.Forms.Button btnMaterias;
     }
 }
