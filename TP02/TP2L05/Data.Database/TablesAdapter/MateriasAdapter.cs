@@ -160,8 +160,8 @@ namespace Data.Database.TablesAdapter
             try
             {
                 OpenConnection();
-                SqlCommand cmdSave = new SqlCommand("INSERT INTO Materiaes (desc_Materia,hs_semanales, hs_totales,id_plan) " +
-                                                                             "values(@desCom,@HsSem,@HsTot,@IdPlan) " +
+                SqlCommand cmdSave = new SqlCommand("INSERT INTO Materias (desc_Materia,hs_semanales, hs_totales,id_plan) " +
+                                                                             "values(@descMat,@HsSem,@HsTot,@IdPlan) " +
                     "select @@identity ", sqlConn);
 
                 cmdSave.Parameters.Add("@descMat", SqlDbType.VarChar, 50).Value = Materia.DescMateria;

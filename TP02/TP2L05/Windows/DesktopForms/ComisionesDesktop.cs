@@ -33,6 +33,7 @@ namespace Windows
             {
                 txtAnio.ReadOnly = true;
                 txtDescripcion.ReadOnly = true;
+                btnSeleccionarPlan.Enabled = false;
             }
             Modo = modo;
             Business.Logic.ComisionesLogic cl = new Business.Logic.ComisionesLogic();
@@ -64,27 +65,23 @@ namespace Windows
 
         public override void MapearADatos()
         {
-            if (Modo == ModoForm.Alta) 
-                
-                ////ComisionActual = new Comision(); //// problema con creacion de comision
-
             if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
             {
-                if (Modo != ModoForm.Alta) 
-
-
-                
-                this.ComisionActual.ID = int.Parse(this.txtID.Text);
-                this.ComisionActual.AnioEspecialidad = Convert.ToInt32( this.txtAnio.Text);
-                this.ComisionActual.DescComision = this.txtDescripcion.Text;
-               
+                ComisionActual.State = BusinessEntity.States.Modified;
+                if (Modo == ModoForm.Alta)
+                {
+                    ComisionActual.State = BusinessEntity.States.New;
+                }
+                ComisionActual.AnioEspecialidad = int.Parse(txtAnio.Text);
+                ComisionActual.DescComision = txtDescripcion.Text;
+                //ComisionActual.IdPlan se mapea en el metodo del boton seleccionar plan               
             }
-
-            if (Modo == ModoForm.Alta) ComisionActual.State = BusinessEntity.States.New;
-            if (Modo == ModoForm.Baja) ComisionActual.State = BusinessEntity.States.Deleted;
-            if (Modo == ModoForm.Consulta) ComisionActual.State = BusinessEntity.States.Unmodified;// Consulta actualiza State a Unmodified?
-            if (Modo == ModoForm.Modificacion) ComisionActual.State = BusinessEntity.States.Modified;
+            if (Modo == ModoForm.Baja)
+            {
+                ComisionActual.State = BusinessEntity.States.Deleted;
+            }
         }
+    
         public override bool Validar()
         {
 

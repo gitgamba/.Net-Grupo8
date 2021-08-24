@@ -101,44 +101,47 @@ namespace Windows
 
         public override bool Validar()
         {
-            string mensaje = null;
-            if (String.IsNullOrEmpty(txtNombre.Text.Trim()))
+            String[] controles = { txtNombre.Text, txtEmail.Text, txtClave.Text, txtApellido.Text, txtUsuario.Text, txtConfirmarClave.Text };
+            foreach (string valor in controles)
             {
-                mensaje += "Complete el campo nombre.\n";
-            }
-
-            if (!String.IsNullOrEmpty(txtEmail.Text.Trim())) 
-            {
-                //if (Business.Logic.Validaciones.EsMailValido(txtEmail.Text.Trim()))
+                if (String.IsNullOrWhiteSpace(valor))
                 {
-                    mensaje += "Agregue un mail valido.\n";
+                    Notificar("Debe llenar todos los campos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
                 }
             }
-
-            //if (txtNombre.Text.Equals(String.Empty) ||
-            //    txtApellido.Text.Equals(String.Empty) ||
-            //    txtEmail.Text.Equals(String.Empty) ||
-            //    txtUsuario.Text.Equals(String.Empty) ||
-            //    txtClave.Text.Equals(String.Empty) ||        // Terminar aparte
-            //    txtConfirmarClave.Text.Equals(String.Empty))
-            if (mensaje != null)
+            if (txtClave.Text != txtConfirmarClave.Text)
             {
-                Notificar("Informacion invalida", mensaje,
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Notificar("Contraseña Invalida", "Las contaseñas no coinciden", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            else 
+            if (!email_bien_escrito(txtEmail.Text))
             {
-                return true;
+                Notificar("Email Invalido", "El Email ingresado es invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
+            return true;
 
-            //if (!txtClave.Text.Equals(txtConfirmarClave.Text))
-            //{
-            //    Notificar("Contraseña invalida", "Las contraseñas no coinciden.",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return false;
-            //}
-                      
+        }
+        private Boolean email_bien_escrito(String email)
+        {
+            String expresion;
+            expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            if (Regex.IsMatch(email, expresion))
+            {
+                if (Regex.Replace(email, expresion, String.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
         public override void GuardarCambios()
         {

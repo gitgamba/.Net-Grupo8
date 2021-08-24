@@ -172,6 +172,7 @@ namespace Windows
             this.lbNombreEspecialidad.TabIndex = 15;
             this.lbNombreEspecialidad.Text = "No selecciono ninguna Especialidad";
             this.lbNombreEspecialidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNombreEspecialidad.Click += new System.EventHandler(this.lbNombreEspecialidad_Click);
             // 
             // btnSeleccionarEspecialidad
             // 

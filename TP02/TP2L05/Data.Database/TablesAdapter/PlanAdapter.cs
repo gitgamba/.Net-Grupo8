@@ -32,7 +32,7 @@ namespace Data.Database
 
                pl.ID = (int)drPlan["id_Plan"];
                pl.Desc_plan = (string)drPlan["desc_plan"];
-               pl.Id_Especialidad = (int)drPlan["id_plan"];
+               pl.Id_Especialidad = (int)drPlan["id_especialidad"];
                Plan.Add(pl);
             }
 
@@ -155,8 +155,8 @@ namespace Data.Database
         try
         {
             OpenConnection();
-            SqlCommand cmdSave = new SqlCommand("INSERT INTO Planes (desc_planes,id_especialidad) " +
-                "values(@desPl,@idEsp) " +
+            SqlCommand cmdSave = new SqlCommand("INSERT INTO Planes (desc_plan,id_especialidad) " +
+                                                             "values(@desPl,@idEsp) " +
                 "select @@identity ", sqlConn);
 
 

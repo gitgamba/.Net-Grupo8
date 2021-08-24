@@ -16,6 +16,7 @@ namespace Windows.DesktopForms
         {
             InitializeComponent();
         }
+        
         public Materia MateriaActual { get; set; }
         public MateriaDesktop(ModoForm modo) : this()
         {
@@ -29,8 +30,9 @@ namespace Windows.DesktopForms
             Text = modo.ToString();
             if (modo == ModoForm.Baja)
             {
-            txtHsSem.ReadOnly = true;
-            txtDescripcion.ReadOnly = true;
+                txtHsSem.ReadOnly = true;
+                txtDescripcion.ReadOnly = true;
+                btnSeleccionarPlan.Enabled = false;
             }
          Modo = modo;
             Business.Logic.MateriasLogic ml = new Business.Logic.MateriasLogic();
@@ -62,28 +64,24 @@ namespace Windows.DesktopForms
 
         public override void MapearADatos()
         {
-            if (Modo == ModoForm.Alta)
-
-                ////MateriaActual = new Materia(); //// problema con creacion de Materia
-
-                if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
+            if (Modo == ModoForm.Alta || Modo == ModoForm.Modificacion)
+            {
+                MateriaActual.State = BusinessEntity.States.Modified;
+                if (Modo == ModoForm.Alta)
                 {
-                    if (Modo != ModoForm.Alta)
-
-
-
-                    this.MateriaActual.ID = int.Parse(this.txtID.Text);
-                    this.MateriaActual.HorasSem = Convert.ToInt32(this.txtHsSem.Text);
-                    this.MateriaActual.HorasSem = Convert.ToInt32(this.txtHsTotales.Text);
-                    this.MateriaActual.DescMateria = this.txtDescripcion.Text;
-
+                    MateriaActual.State = BusinessEntity.States.New;
                 }
-
-            if (Modo == ModoForm.Alta) MateriaActual.State = BusinessEntity.States.New;
-            if (Modo == ModoForm.Baja) MateriaActual.State = BusinessEntity.States.Deleted;
-            if (Modo == ModoForm.Consulta) MateriaActual.State = BusinessEntity.States.Unmodified;// Consulta actualiza State a Unmodified?
-            if (Modo == ModoForm.Modificacion) MateriaActual.State = BusinessEntity.States.Modified;
-        }
+                MateriaActual.HorasSem = int.Parse(txtHsSem.Text);
+                MateriaActual.HorasTot = int.Parse(txtHsTotales.Text);
+                MateriaActual.DescMateria = txtDescripcion.Text;
+                //MateriaActual.IdPlan se mapea en el metodo del boton seleccionar plan               
+            }
+            if (Modo == ModoForm.Baja)
+            {
+                MateriaActual.State = BusinessEntity.States.Deleted;
+            }
+        
+    }
         public override bool Validar()
         {
 
