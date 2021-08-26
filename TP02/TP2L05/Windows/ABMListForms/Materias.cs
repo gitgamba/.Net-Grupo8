@@ -66,7 +66,7 @@ namespace Windows
             }
 
             // para obtener el ID utilizamos los que estaba en el pdf
-            int ID = ((Business.Entities.Comision)this.dgvMaterias.SelectedRows[0].DataBoundItem).ID;
+            int ID = ((Business.Entities.Materia)this.dgvMaterias.SelectedRows[0].DataBoundItem).ID;
             //Ahora utilizamos el ctor de UsuarioDesktop que requiere enviar el ID y el Modo
             MateriaDesktop formMateria = new MateriaDesktop(ID, ApplicationForm.ModoForm.Modificacion); //estamos en modificacion
             formMateria.ShowDialog(); // mostramos el formUsuario
