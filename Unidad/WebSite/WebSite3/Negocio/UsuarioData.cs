@@ -56,19 +56,16 @@ namespace Negocio
             //agrego ese objeto a la lista de usuarios
             while (rdrUsuarios.Read())
             {
+               
                 usuarioActual = new Usuario();
-                usuarioActual.Id = (int)rdrUsuarios["id"];
-                usuarioActual.TipoDoc = (Nullable<int>)rdrUsuarios["tipo_doc"];
-                usuarioActual.NroDoc = (Nullable<int>)rdrUsuarios["nro_doc"];
-                usuarioActual.FechaNac = rdrUsuarios["fecha_nac"].ToString();
-                usuarioActual.Apellido = rdrUsuarios["apellido"].ToString();
+
+                usuarioActual.ID = (int)rdrUsuarios["id_usuario"];
+               usuarioActual.Apellido = rdrUsuarios["apellido"].ToString();
                 usuarioActual.Nombre = rdrUsuarios["nombre"].ToString();
-                usuarioActual.Direccion = rdrUsuarios["direccion"].ToString();
-                usuarioActual.Telefono = rdrUsuarios["telefono"].ToString();
                 usuarioActual.Email = rdrUsuarios["email"].ToString();
-                usuarioActual.Celular = rdrUsuarios["celular"].ToString();
-                usuarioActual.NombreUsuario = rdrUsuarios["usuario"].ToString();
+                usuarioActual.Nombre_Usuario = rdrUsuarios["nombre_usuario"].ToString();
                 usuarioActual.Clave = rdrUsuarios["clave"].ToString();
+                usuarioActual.Habilitado = (bool)rdrUsuarios["habilitado"];
 
                 //Agrego el objeto a la lista de usuarios
                 listaUsuarios.Add(usuarioActual);
@@ -85,10 +82,10 @@ namespace Negocio
         {
             //Creo el comando para ejecutar la sentencia SQL de DELETE, 
             //le asocio la Conexión también
-            SqlCommand cmdDeleteUsuario = new SqlCommand(" DELETE FROM usuarios WHERE id=@id ", this.Conn);
+            SqlCommand cmdDeleteUsuario = new SqlCommand(" DELETE FROM usuarios WHERE id_usuario=@id ", this.Conn);
 
             //Le agrego los parámetros necesarios
-            cmdDeleteUsuario.Parameters.Add(new SqlParameter("@id", usuarioActual.Id.ToString()));
+            cmdDeleteUsuario.Parameters.Add(new SqlParameter("@id", usuarioActual.ID.ToString()));
 
             //Abro la Conexión
             this.Conn.Open();
@@ -104,24 +101,19 @@ namespace Negocio
             //Creo el comando para ejecutar la sentencia SQL de DELETE, 
             //le asocio la Conexión también
             SqlCommand cmdActualizarUsuario = new SqlCommand(" UPDATE usuarios " +
-                                               " SET tipo_doc = @tipo_doc, nro_doc = @nro_doc, fecha_nac = @fecha_nac, " +
-                                               " apellido = @apellido, nombre = @nombre, direccion = @direccion, " +
-                                               " telefono = @telefono, email = @email, celular = @celular, usuario = @usuario, " +
-                                               " clave = @clave WHERE id=@id ", this.Conn);
+                                               " SET apellido = @apellido, nombre = @nombre," +
+                                               "email = @email, nombre_usuario = @nombre_usuario, " +
+                                               " clave = @clave, habilitado = @hab WHERE id_usuario = @id ", this.Conn);
 
             //Le agrego los parámetros necesarios
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@tipo_doc", usuarioActual.TipoDoc.ToString()));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@nro_doc", usuarioActual.NroDoc.ToString()));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@fecha_nac", usuarioActual.FechaNac));
+            
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@apellido", usuarioActual.Apellido));
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@nombre", usuarioActual.Nombre));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@direccion", usuarioActual.Direccion));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@telefono", usuarioActual.Telefono));
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@email", usuarioActual.Email));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@celular", usuarioActual.Celular));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@usuario", usuarioActual.NombreUsuario));
+            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@nombre_usuario", usuarioActual.Nombre_Usuario));
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@clave", usuarioActual.Clave));
-            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@id", usuarioActual.Id.ToString()));
+            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@id", usuarioActual.ID.ToString()));
+            cmdActualizarUsuario.Parameters.Add(new SqlParameter("@hab", usuarioActual.Habilitado));
 
             //Abro la Conexión
             this.Conn.Open();
@@ -135,23 +127,19 @@ namespace Negocio
         {
             //Creo el comando para ejecutar la sentencia SQL de DELETE, 
             //le asocio la Conexión también
-            SqlCommand cmdInsertarUsuario = new SqlCommand(" INSERT INTO usuarios(tipo_doc,nro_doc,fecha_nac,apellido, " +
-                                               " nombre,direccion,telefono,email,celular,usuario,clave) " +
-                                               " VALUES (@tipo_doc,@nro_doc,@fecha_nac,@apellido,@nombre,@direccion, " +
-                                               " @telefono,@email,@celular, @usuario, @clave  )", this.Conn);
+            SqlCommand cmdInsertarUsuario = new SqlCommand(" INSERT INTO usuarios(apellido, " +
+                                               " nombre,email,nombre_usuario,clave,habilitado) " +
+                                               " VALUES (@apellido,@nombre " +
+                                               "@email,@usuario, @clave, @hab)", this.Conn);
 
             //Le agrego los parámetros necesarios
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@tipo_doc", usuarioActual.TipoDoc.ToString()));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@nro_doc", usuarioActual.NroDoc.ToString()));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@fecha_nac", usuarioActual.FechaNac));
+            
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@apellido", usuarioActual.Apellido));
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@nombre", usuarioActual.Nombre));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@direccion", usuarioActual.Direccion));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@telefono", usuarioActual.Telefono));
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@email", usuarioActual.Email));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@celular", usuarioActual.Celular));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@usuario", usuarioActual.NombreUsuario));
+            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@usuario", usuarioActual.Nombre_Usuario));
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@clave", usuarioActual.Clave));
+            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@hab", usuarioActual.Habilitado));
 
             //Abro la Conexión
             this.Conn.Open();

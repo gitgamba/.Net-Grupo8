@@ -36,34 +36,10 @@ namespace LabGrillaASP
                 cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtApellido");
                 textoActual = cajaTexto.Text;
                 usuarioNuevo.Apellido = textoActual;
-
-                cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtTipoDoc");
-                textoActual = cajaTexto.Text;
-                usuarioNuevo.TipoDoc = Convert.ToInt32(textoActual);
-
-                cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtNroDoc");
-                textoActual = cajaTexto.Text;
-                usuarioNuevo.NroDoc = Convert.ToInt32(textoActual);
-
-                cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtFechaNac");
-                textoActual = cajaTexto.Text;
-                usuarioNuevo.FechaNac = textoActual;
-
-                cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtDireccion");
-                textoActual = cajaTexto.Text;
-                usuarioNuevo.Direccion = textoActual;
-
-                cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtTelefono");
-                textoActual = cajaTexto.Text;
-                usuarioNuevo.Telefono = textoActual;
-
+             
                 cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtEmail");
                 textoActual = cajaTexto.Text;
-                usuarioNuevo.Email = textoActual;
-
-                cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtCelular");
-                textoActual = cajaTexto.Text;
-                usuarioNuevo.Celular = textoActual;
+                usuarioNuevo.Email = textoActual;                
 
                 cajaTexto = (TextBox)grdUsuarios.FooterRow.FindControl("txtNombreUsuario");
                 textoActual = cajaTexto.Text;
