@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabGrillaASP", "LabGrillaASP.csproj", "{A3C5418B-A2D7-4AE9-8C11-38058B972264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "..\Negocio\Negocio.csproj", "{FE20AD51-BD44-4290-A49F-7794BA668B45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C5418B-A2D7-4AE9-8C11-38058B972264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C5418B-A2D7-4AE9-8C11-38058B972264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C5418B-A2D7-4AE9-8C11-38058B972264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C5418B-A2D7-4AE9-8C11-38058B972264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE20AD51-BD44-4290-A49F-7794BA668B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE20AD51-BD44-4290-A49F-7794BA668B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE20AD51-BD44-4290-A49F-7794BA668B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE20AD51-BD44-4290-A49F-7794BA668B45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F68F5858-88C2-4EFA-A324-8B45694FF292}
+	EndGlobalSection
+EndGlobal

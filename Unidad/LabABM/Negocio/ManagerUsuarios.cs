@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Negocio
 {
-    public class UsuarioData
+    public class ManagerUsuarios
     {
         private SqlConnection _conn;
 
@@ -18,7 +17,7 @@ namespace Negocio
             get { return _conn; }
             set { _conn = value; }
         }
-        public UsuarioData()
+        public ManagerUsuarios()
         {
             this.Conn = new SqlConnection(
             "Data Source=.\\SQLExpress;Initial Catalog=tp2_net;Integrated Security=true;");
@@ -36,6 +35,33 @@ namespace Negocio
              */
 
         }
+        public Usuario GetUsuario(int idUsuario)
+        {
+            //Basarse en el método GetAll pero obtener únicamente el usuario que viene
+            //como párametro
+            Usuario usuarioActual = new Usuario();
+            
+            SqlCommand cmdGetUsuarios = new SqlCommand("select * from usuarios where id_usuario=@id", this.Conn);
+            
+            cmdGetUsuarios.Parameters.Add(new SqlParameter("id", idUsuario.ToString()));
+
+            this.Conn.Open();
+            
+            SqlDataReader rdrUsuarios = cmdGetUsuarios.ExecuteReader();
+           
+
+            usuarioActual.ID = (int)rdrUsuarios["id_usuario"];
+            usuarioActual.Apellido = rdrUsuarios["apellido"].ToString();
+            usuarioActual.Nombre = rdrUsuarios["nombre"].ToString();
+            usuarioActual.Email = rdrUsuarios["email"].ToString();
+            usuarioActual.Nombre_Usuario = rdrUsuarios["nombre_usuario"].ToString();
+            usuarioActual.Clave = rdrUsuarios["clave"].ToString();
+            usuarioActual.Habilitado = (bool)rdrUsuarios["habilitado"];
+
+            return usuarioActual;
+        }
+       
+
         public List<Usuario> GetAll()
         {
             //Creo la lista en la que le voy a ir agregando los usuarios
@@ -56,11 +82,11 @@ namespace Negocio
             //agrego ese objeto a la lista de usuarios
             while (rdrUsuarios.Read())
             {
-               
+
                 usuarioActual = new Usuario();
 
                 usuarioActual.ID = (int)rdrUsuarios["id_usuario"];
-               usuarioActual.Apellido = rdrUsuarios["apellido"].ToString();
+                usuarioActual.Apellido = rdrUsuarios["apellido"].ToString();
                 usuarioActual.Nombre = rdrUsuarios["nombre"].ToString();
                 usuarioActual.Email = rdrUsuarios["email"].ToString();
                 usuarioActual.Nombre_Usuario = rdrUsuarios["nombre_usuario"].ToString();
@@ -106,7 +132,7 @@ namespace Negocio
                                                " clave = @clave, habilitado = @hab WHERE id_usuario = @id ", this.Conn);
 
             //Le agrego los parámetros necesarios
-            
+
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@apellido", usuarioActual.Apellido));
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@nombre", usuarioActual.Nombre));
             cmdActualizarUsuario.Parameters.Add(new SqlParameter("@email", usuarioActual.Email));
@@ -138,9 +164,9 @@ namespace Negocio
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@clave", usuarioActual.Clave));
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@hab", usuarioActual.Habilitado));
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@nombre", usuarioActual.Nombre));
-            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@apellido", usuarioActual.Apellido));            
+            cmdInsertarUsuario.Parameters.Add(new SqlParameter("@apellido", usuarioActual.Apellido));
             cmdInsertarUsuario.Parameters.Add(new SqlParameter("@email", usuarioActual.Email));
-            
+
             //Abro la Conexión
             this.Conn.Open();
             //Ejecuto la instrucción SQL de INSERT
